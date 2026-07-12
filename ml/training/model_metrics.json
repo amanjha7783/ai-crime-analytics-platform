@@ -1,0 +1,103 @@
+{
+  "dataset": "data\\processed\\crimes_sample.csv",
+  "rows": 20,
+  "models": [
+    {
+      "model": "RandomForestClassifier",
+      "task": "crime_classification",
+      "score": 1.0,
+      "features": [
+        "latitude",
+        "longitude",
+        "crime_hour",
+        "crime_month",
+        "is_weekend",
+        "population_density",
+        "previous_crimes_nearby",
+        "distance_from_police_station",
+        "repeat_offender_count",
+        "historical_hotspot_score"
+      ],
+      "validation_note": "fit_sanity_score_for_small_demo_dataset"
+    },
+    {
+      "model": "IsolationForest",
+      "task": "anomaly_detection",
+      "score": 0.95,
+      "features": [
+        "latitude",
+        "longitude",
+        "crime_hour",
+        "crime_month",
+        "is_weekend",
+        "population_density",
+        "previous_crimes_nearby",
+        "distance_from_police_station",
+        "repeat_offender_count",
+        "historical_hotspot_score"
+      ]
+    },
+    {
+      "model": "HotspotHeuristic",
+      "task": "hotspot_prediction",
+      "score": 0.529,
+      "features": [
+        "district",
+        "latitude",
+        "longitude",
+        "historical_hotspot_score"
+      ]
+    },
+    {
+      "model": "RiskScoringModel",
+      "task": "risk_scoring",
+      "score": 0.84,
+      "features": [
+        "crime_type",
+        "repeat_offender_count",
+        "crime_hour",
+        "historical_hotspot_score"
+      ]
+    }
+  ],
+  "best_model": {
+    "model": "RandomForestClassifier",
+    "task": "crime_classification",
+    "score": 1.0,
+    "features": [
+      "latitude",
+      "longitude",
+      "crime_hour",
+      "crime_month",
+      "is_weekend",
+      "population_density",
+      "previous_crimes_nearby",
+      "distance_from_police_station",
+      "repeat_offender_count",
+      "historical_hotspot_score"
+    ],
+    "validation_note": "fit_sanity_score_for_small_demo_dataset"
+  },
+  "optional_heavy_models": [
+    {
+      "model": "XGBoost",
+      "status": "available via requirements-ml-heavy.txt"
+    },
+    {
+      "model": "LightGBM",
+      "status": "available via requirements-ml-heavy.txt"
+    },
+    {
+      "model": "CatBoost",
+      "status": "available via requirements-ml-heavy.txt"
+    },
+    {
+      "model": "Prophet",
+      "status": "available via requirements-ml-heavy.txt"
+    },
+    {
+      "model": "SHAP",
+      "status": "available via requirements-ml-heavy.txt"
+    }
+  ]
+}

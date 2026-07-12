@@ -1,0 +1,21 @@
+fir_id,crime_type,district,police_station,reported_at,latitude,longitude,status,offender_id,victim_gender,victim_age,weapon_used,crime_hour,crime_day,crime_month,crime_year,is_weekend,festival,season,income_category,population_density,crime_frequency,repeat_offender_count,time_since_last_crime,previous_crimes_nearby,distance_from_police_station,historical_hotspot_score,risk_score,risk_level
+FIR-2026-0001,Theft,Bengaluru Urban,Central,2026-01-15 21:15:00,12.9716,77.5946,Open,OFF-1001,Female,28,Unknown,21,15,1,2026,0,0,Winter,High,12000,7,4,999.0,6,3.21,100.0,85.0,High
+FIR-2026-0002,Assault,Mysuru,Lashkar,2026-01-16 23:30:00,12.2958,76.6394,Under Investigation,OFF-1001,Male,34,Knife,23,16,1,2026,0,0,Winter,High,4500,2,4,999.0,1,4.4,28.57,100.0,High
+FIR-2026-0003,Cyber Crime,Bengaluru Urban,Whitefield,2026-01-17 10:00:00,12.9698,77.7499,Solved,OFF-1002,Female,41,Digital,10,17,1,2026,1,0,Winter,High,12000,7,1,36.75,6,6.47,100.0,72.0,High
+FIR-2026-0004,Burglary,Hubballi Dharwad,Hubballi Town,2026-01-18 02:45:00,15.3647,75.124,Open,OFF-1003,Male,52,Crowbar,2,18,1,2026,1,0,Winter,Medium,4500,2,3,999.0,1,4.74,28.57,90.71,High
+FIR-2026-0005,Robbery,Mangaluru,Pandeshwar,2026-01-19 20:20:00,12.9141,74.856,Under Investigation,OFF-1004,Female,37,Knife,20,19,1,2026,0,0,Winter,Medium,4500,2,1,999.0,1,5.13,28.57,97.71,High
+FIR-2026-0006,Theft,Belagavi,Market,2026-01-20 18:05:00,15.8497,74.4977,Solved,OFF-1005,Male,45,Unknown,18,20,1,2026,0,0,Winter,Medium,4500,2,2,999.0,1,5.52,28.57,54.71,Medium
+FIR-2026-0007,Assault,Bengaluru Urban,Central,2026-02-02 22:10:00,12.972,77.595,Open,OFF-1001,Male,31,Stick,22,2,2,2026,0,0,Winter,High,12000,7,4,396.1666666666667,6,3.16,100.0,100.0,High
+FIR-2026-0008,Cyber Crime,Bengaluru Urban,Whitefield,2026-02-03 11:25:00,12.9702,77.7505,Open,OFF-1006,Female,29,Digital,11,3,2,2026,0,0,Winter,High,12000,7,1,13.25,6,6.41,100.0,72.0,High
+FIR-2026-0009,Drug Trafficking,Kalaburagi,Station Bazaar,2026-02-07 01:35:00,17.3297,76.8343,Under Investigation,OFF-1007,Male,26,Contraband,1,7,2,2026,1,0,Winter,Medium,4500,2,2,999.0,1,5.04,28.57,100.0,High
+FIR-2026-0010,Theft,Shivamogga,Doddapete,2026-02-08 17:40:00,13.9299,75.5681,Solved,OFF-1008,Female,33,Unknown,17,8,2,2026,1,0,Winter,Medium,4500,2,1,999.0,1,4.85,28.57,47.71,Medium
+FIR-2026-0011,Burglary,Bengaluru Urban,Indiranagar,2026-02-11 03:05:00,12.9784,77.6408,Open,OFF-1003,Male,49,Crowbar,3,11,2,2026,0,0,Winter,High,12000,7,3,183.66666666666666,6,5.12,100.0,100.0,High
+FIR-2026-0012,Robbery,Mysuru,Lashkar,2026-02-14 21:45:00,12.2961,76.6399,Open,OFF-1009,Female,24,Knife,21,14,2,2026,1,0,Winter,High,4500,2,1,694.25,1,4.45,28.57,97.71,High
+FIR-2026-0013,Assault,Belagavi,Market,2026-03-01 19:55:00,15.85,74.498,Solved,OFF-1010,Male,39,Stick,19,1,3,2026,1,0,Summer,Medium,4500,2,1,961.8333333333334,1,5.55,28.57,77.71,High
+FIR-2026-0014,Cyber Crime,Dakshina Kannada,Cyber Cell,2026-03-05 09:15:00,12.87,74.88,Under Investigation,OFF-1011,Female,42,Digital,9,5,3,2026,0,0,Summer,Medium,4500,1,1,999.0,0,4.0,14.29,54.86,Medium
+FIR-2026-0015,Theft,Bengaluru Urban,Indiranagar,2026-03-06 18:35:00,12.978,77.641,Open,OFF-1005,Male,30,Unknown,18,6,3,2026,0,0,Summer,High,12000,7,2,567.5,6,5.16,100.0,69.0,Medium
+FIR-2026-0016,Drug Trafficking,Mangaluru,Pandeshwar,2026-03-09 00:30:00,12.9144,74.8565,Open,OFF-1007,Male,27,Contraband,0,9,3,2026,0,0,Summer,Medium,4500,2,2,1156.1666666666667,1,5.09,28.57,100.0,High
+FIR-2026-0017,Robbery,Hubballi Dharwad,Hubballi Town,2026-03-13 22:25:00,15.365,75.1244,Under Investigation,OFF-1012,Female,36,Firearm,22,13,3,2026,0,0,Summer,Medium,4500,2,1,1315.6666666666667,1,4.74,28.57,97.71,High
+FIR-2026-0018,Assault,Kalaburagi,Station Bazaar,2026-03-16 23:05:00,17.33,76.8349,Solved,OFF-1001,Male,43,Knife,23,16,3,2026,0,0,Summer,Medium,4500,2,4,909.5,1,5.11,28.57,100.0,High
+FIR-2026-0019,Burglary,Shivamogga,Doddapete,2026-03-18 02:05:00,13.9301,75.5686,Open,OFF-1003,Female,58,Crowbar,2,18,3,2026,0,0,Summer,Medium,4500,2,3,896.4166666666666,1,4.83,28.57,90.71,High
+FIR-2026-0020,Cyber Crime,Bengaluru Urban,Cyber Cell,2026-03-20 12:20:00,12.9718,77.5951,Under Investigation,OFF-1013,Female,25,Digital,12,20,3,2026,0,0,Summer,High,12000,7,1,329.75,6,3.18,100.0,72.0,High

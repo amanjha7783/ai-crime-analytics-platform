@@ -1,0 +1,8 @@
+-r requirements.txt
+xgboost>=2.0.0
+lightgbm>=4.3.0
+catboost>=1.2.0
+prophet>=1.1.5
+shap>=0.45.0
+plotly>=5.20.0
+folium>=0.16.0
