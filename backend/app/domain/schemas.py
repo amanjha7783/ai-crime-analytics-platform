@@ -2,12 +2,27 @@ from __future__ import annotations
 
 from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class LoginRequest(BaseModel):
     username: str
     password: str
+
+
+class SignupRequest(BaseModel):
+    username: str
+    password: str = Field(..., min_length=6)
+    full_name: str = Field(..., min_length=1)
+    role: str = Field(default="Analyst")
+
+    @field_validator("username")
+    @classmethod
+    def validate_username(cls, v: str) -> str:
+        v = v.strip()
+        if not v or len(v) < 3:
+            raise ValueError("Username must be at least 3 characters")
+        return v
 
 
 class UserOut(BaseModel):
@@ -19,6 +34,11 @@ class UserOut(BaseModel):
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
+    user: UserOut
+
+
+class SignupResponse(BaseModel):
+    message: str
     user: UserOut
 
 

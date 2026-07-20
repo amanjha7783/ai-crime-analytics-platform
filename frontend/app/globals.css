@@ -56,6 +56,16 @@ a {
   text-decoration: none;
 }
 
+#nprogress .bar {
+  background: linear-gradient(90deg, var(--accent), #6366f1, var(--accent-2));
+  height: 3px;
+  z-index: 70;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--accent-2), 0 0 5px var(--accent-2);
+}
+
 .map-grid {
   background-image:
     linear-gradient(rgba(18, 20, 18, 0.08) 1px, transparent 1px),

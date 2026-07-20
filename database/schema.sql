@@ -272,6 +272,16 @@ CREATE TABLE IF NOT EXISTS crimes (
     weapon_used VARCHAR(128),
     location GEOMETRY(POINT, 4326) NOT NULL,
     risk_score NUMERIC(5, 2),
+    risk_level VARCHAR(32),
+    hotspot_score NUMERIC(5, 2),
+    threat_level VARCHAR(32),
+    confidence_score NUMERIC(5, 2),
+    trend_score NUMERIC(5, 2),
+    seasonal_pattern VARCHAR(64),
+    risk_zone VARCHAR(64),
+    patrol_recommendation VARCHAR(128),
+    day_night_indicator VARCHAR(32),
+    crime_forecast VARCHAR(128),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 

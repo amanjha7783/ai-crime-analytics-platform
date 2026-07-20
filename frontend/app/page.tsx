@@ -1,4 +1,6 @@
-import Link from "next/link";
+import AppLink from "@/components/app-link";
+import { TeamCard } from "@/components/team-card";
+import { landingTeams } from "@/lib/team-data";
 import {
   ArrowRight,
   BarChart3,
@@ -43,13 +45,6 @@ const stats = [
   { label: "Analyst Ready", value: "24/7" }
 ];
 
-const team = [
-  { name: "KSP Data Science", role: "AI & Analytics" },
-  { name: "CrimeOps Command", role: "Operations" },
-  { name: "Geo Surveillance", role: "GIS & Mapping" },
-  { name: "Security & Trust", role: "Risk & Compliance" }
-];
-
 export default function LandingPage() {
   return (
     <main className="relative overflow-hidden landing-gradient bg-[var(--background)] text-[var(--foreground)]">
@@ -71,7 +66,7 @@ export default function LandingPage() {
                 ["Team", "team"],
                 ["Contact", "contact"]
               ].map(([label, href]) => (
-                <a key={href} href={`#${href}`} className="transition hover:text-[var(--accent)]">
+                <a key={href} href={`#${href}`} className="transition hover:text-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] rounded-sm">
                   {label}
                 </a>
               ))}
@@ -93,13 +88,13 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <a href="#features" className="btn-primary inline-flex items-center gap-2">
+                <AppLink href="#features" className="btn-primary inline-flex items-center gap-2">
                   Explore features
                   <ArrowRight aria-hidden="true" size={16} />
-                </a>
-                <Link href="/login" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm text-[var(--foreground)] transition hover:bg-white/15">
+                </AppLink>
+                <AppLink href="/login" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm text-[var(--foreground)] transition hover:bg-white/15">
                   Open dashboard
-                </Link>
+                </AppLink>
               </div>
             </div>
 
@@ -117,10 +112,16 @@ export default function LandingPage() {
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {stats.map((item) => (
-                    <div key={item.label} className="rounded-[1.5rem] border border-white/10 bg-white/10 p-5">
+                    <AppLink
+                      href={
+                        item.label.includes("Zones") ? "/hotspots" : item.label.includes("Alerts") ? "/predictions" : "/reports"
+                      }
+                      key={item.label}
+                      className="rounded-[1.5rem] border border-white/10 bg-white/10 p-5 block focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+                    >
                       <p className="text-sm text-[var(--muted)]">{item.label}</p>
                       <p className="mt-3 text-3xl font-semibold text-[var(--foreground)]">{item.value}</p>
-                    </div>
+                    </AppLink>
                   ))}
                 </div>
               </div>
@@ -179,15 +180,23 @@ export default function LandingPage() {
             <h2 className="text-4xl font-semibold text-[var(--foreground)]">Everything teams need to analyze, predict, and respond.</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {features.map((feature) => (
-              <div key={feature.title} className="glass glass-frame rounded-[1.75rem] border border-white/10 p-8 transition hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_24px_75px_rgba(15,23,42,0.18)]">
-                <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-white/10 text-[var(--accent)] shadow-sm">
-                  <feature.icon size={24} />
-                </div>
-                <h3 className="mt-6 text-xl font-semibold text-[var(--foreground)]">{feature.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.description}</p>
-              </div>
-            ))}
+            {features.map((feature) => {
+              const href =
+                feature.title.includes("Hotspots") ? "/hotspots" : feature.title.includes("Network") ? "/network-analysis" : feature.title.includes("Explainable") ? "/predictions" : "/analytics";
+              return (
+                <AppLink
+                  href={href}
+                  key={feature.title}
+                  className="glass glass-frame rounded-[1.75rem] border border-white/10 p-8 block transition hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_24px_75px_rgba(15,23,42,0.18)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-white/10 text-[var(--accent)] shadow-sm">
+                    <feature.icon size={24} />
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-[var(--foreground)]">{feature.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{feature.description}</p>
+                </AppLink>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -223,14 +232,8 @@ export default function LandingPage() {
             <h2 className="text-4xl font-semibold text-[var(--foreground)]">A cross-functional police analytics squad.</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {team.map((member) => (
-              <div key={member.name} className="glass glass-frame rounded-[1.75rem] border border-white/10 p-8 text-center">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)]/15 text-[var(--accent)]">
-                  <Users size={28} />
-                </div>
-                <h3 className="mt-6 text-xl font-semibold text-[var(--foreground)]">{member.name}</h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">{member.role}</p>
-              </div>
+            {landingTeams.map((team) => (
+              <TeamCard key={team.slug} team={team} />
             ))}
           </div>
         </div>
@@ -249,9 +252,9 @@ export default function LandingPage() {
                 <a href="mailto:hello@kspdatathon.local" className="btn-primary inline-flex items-center gap-2">
                   <Mail size={16} /> Contact us
                 </a>
-                <Link href="/login" className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm text-[var(--foreground)] transition hover:bg-white/15">
+                <AppLink href="/login" className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm text-[var(--foreground)] transition hover:bg-white/15">
                   Launch dashboard
-                </Link>
+                </AppLink>
               </div>
             </div>
             <div className="grid gap-4 rounded-[1.75rem] bg-black/5 p-8">

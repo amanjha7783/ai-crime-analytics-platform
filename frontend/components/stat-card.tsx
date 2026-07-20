@@ -3,12 +3,10 @@ import type { LucideIcon } from "lucide-react";
 export function StatCard({
   label,
   value,
-  tone,
   icon: Icon
 }: {
   label: string;
   value: string | number;
-  tone: string;
   icon: LucideIcon;
 }) {
   return (

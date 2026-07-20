@@ -1,0 +1,2632 @@
+[
+  {
+    "UnitID":1,
+    "UnitName":"Nagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":2,
+    "UnitName":"Sambalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":3,
+    "UnitName":"Kolhapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":4,
+    "UnitName":"Bongaigaon Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":5,
+    "UnitName":"Gudivada Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":6,
+    "UnitName":"Patna Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":1,
+    "Active":1
+  },
+  {
+    "UnitID":7,
+    "UnitName":"Tiruchirappalli Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":2,
+    "Active":1
+  },
+  {
+    "UnitID":8,
+    "UnitName":"Muzaffarpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":2,
+    "Active":1
+  },
+  {
+    "UnitID":9,
+    "UnitName":"Kishanganj Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":2,
+    "Active":1
+  },
+  {
+    "UnitID":10,
+    "UnitName":"Bongaigaon Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":2,
+    "Active":1
+  },
+  {
+    "UnitID":11,
+    "UnitName":"Muzaffarnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":2,
+    "Active":1
+  },
+  {
+    "UnitID":12,
+    "UnitName":"Giridih Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":13,
+    "UnitName":"Chennai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":14,
+    "UnitName":"Bhusawal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":15,
+    "UnitName":"Alwar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":16,
+    "UnitName":"Thrissur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":17,
+    "UnitName":"Kota Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":18,
+    "UnitName":"Nadiad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":19,
+    "UnitName":"Secunderabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":20,
+    "UnitName":"Mahbubnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":3,
+    "Active":1
+  },
+  {
+    "UnitID":21,
+    "UnitName":"Varanasi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":22,
+    "UnitName":"Jorhat Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":23,
+    "UnitName":"Burhanpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":24,
+    "UnitName":"Suryapet Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":25,
+    "UnitName":"Tadipatri Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":26,
+    "UnitName":"Gangtok Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":27,
+    "UnitName":"Coimbatore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":28,
+    "UnitName":"Ambattur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":4,
+    "Active":1
+  },
+  {
+    "UnitID":29,
+    "UnitName":"Vijayawada Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":30,
+    "UnitName":"Salem Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":31,
+    "UnitName":"Alwar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":32,
+    "UnitName":"Bharatpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":33,
+    "UnitName":"Uluberia Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":34,
+    "UnitName":"Bhagalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":35,
+    "UnitName":"Madurai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":36,
+    "UnitName":"Deoghar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":37,
+    "UnitName":"Ujjain Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":38,
+    "UnitName":"Nadiad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":39,
+    "UnitName":"Proddatur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":40,
+    "UnitName":"Anantapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":41,
+    "UnitName":"Berhampur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":42,
+    "UnitName":"Satna Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":43,
+    "UnitName":"Agartala Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":44,
+    "UnitName":"Rajpur Sonarpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":45,
+    "UnitName":"Rajpur Sonarpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":46,
+    "UnitName":"Tenali Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":47,
+    "UnitName":"Asansol Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":48,
+    "UnitName":"Kolhapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":49,
+    "UnitName":"Kishanganj Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":50,
+    "UnitName":"Bhimavaram Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":51,
+    "UnitName":"Ballia Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":52,
+    "UnitName":"Mirzapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":53,
+    "UnitName":"Durgapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":54,
+    "UnitName":"Mysore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":55,
+    "UnitName":"Bhubaneswar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":56,
+    "UnitName":"Kozhikode Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":57,
+    "UnitName":"Kavali Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":58,
+    "UnitName":"Kharagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":5,
+    "Active":1
+  },
+  {
+    "UnitID":59,
+    "UnitName":"Kavali Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":60,
+    "UnitName":"Dehri Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":61,
+    "UnitName":"Begusarai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":62,
+    "UnitName":"Raipur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":63,
+    "UnitName":"Mau Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":64,
+    "UnitName":"Durg Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":65,
+    "UnitName":"Sangli-Miraj & Kupwad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":6,
+    "Active":1
+  },
+  {
+    "UnitID":66,
+    "UnitName":"Delhi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":67,
+    "UnitName":"Orai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":68,
+    "UnitName":"Guna Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":69,
+    "UnitName":"Bihar Sharif Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":70,
+    "UnitName":"Jamnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":71,
+    "UnitName":"Nanded Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":7,
+    "Active":1
+  },
+  {
+    "UnitID":72,
+    "UnitName":"Khora  Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":73,
+    "UnitName":"Unnao Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":74,
+    "UnitName":"Gorakhpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":75,
+    "UnitName":"Aizawl Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":76,
+    "UnitName":"Howrah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":77,
+    "UnitName":"Tezpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":8,
+    "Active":1
+  },
+  {
+    "UnitID":78,
+    "UnitName":"Guwahati Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":79,
+    "UnitName":"Coimbatore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":80,
+    "UnitName":"Warangal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":81,
+    "UnitName":"Jamalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":82,
+    "UnitName":"Bilaspur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":83,
+    "UnitName":"Rajpur Sonarpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":84,
+    "UnitName":"Bijapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":85,
+    "UnitName":"Dindigul Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":86,
+    "UnitName":"Hazaribagh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":87,
+    "UnitName":"Jamshedpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":88,
+    "UnitName":"Kamarhati Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":9,
+    "Active":1
+  },
+  {
+    "UnitID":89,
+    "UnitName":"Sonipat Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":10,
+    "Active":1
+  },
+  {
+    "UnitID":90,
+    "UnitName":"Giridih Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":10,
+    "Active":1
+  },
+  {
+    "UnitID":91,
+    "UnitName":"Giridih Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":10,
+    "Active":1
+  },
+  {
+    "UnitID":92,
+    "UnitName":"Chennai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":10,
+    "Active":1
+  },
+  {
+    "UnitID":93,
+    "UnitName":"Allahabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":10,
+    "Active":1
+  },
+  {
+    "UnitID":94,
+    "UnitName":"Jabalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":11,
+    "Active":1
+  },
+  {
+    "UnitID":95,
+    "UnitName":"Bathinda Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":11,
+    "Active":1
+  },
+  {
+    "UnitID":96,
+    "UnitName":"Kottayam Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":11,
+    "Active":1
+  },
+  {
+    "UnitID":97,
+    "UnitName":"Alwar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":11,
+    "Active":1
+  },
+  {
+    "UnitID":98,
+    "UnitName":"Kakinada Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":11,
+    "Active":1
+  },
+  {
+    "UnitID":99,
+    "UnitName":"Aurangabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":100,
+    "UnitName":"Latur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":101,
+    "UnitName":"Vellore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":102,
+    "UnitName":"Bareilly Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":103,
+    "UnitName":"Chinsurah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":104,
+    "UnitName":"Bhusawal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":12,
+    "Active":1
+  },
+  {
+    "UnitID":105,
+    "UnitName":"Bhind Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":106,
+    "UnitName":"Navi Mumbai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":107,
+    "UnitName":"Sambhal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":108,
+    "UnitName":"Moradabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":109,
+    "UnitName":"Nellore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":110,
+    "UnitName":"Jorhat Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":111,
+    "UnitName":"Kolhapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":112,
+    "UnitName":"South Dumdum Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":13,
+    "Active":1
+  },
+  {
+    "UnitID":113,
+    "UnitName":"Surendranagar Dudhrej Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":114,
+    "UnitName":"Aurangabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":115,
+    "UnitName":"Jamalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":116,
+    "UnitName":"Dhanbad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":117,
+    "UnitName":"Tiruchirappalli Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":118,
+    "UnitName":"Rourkela Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":119,
+    "UnitName":"Shivpuri Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":120,
+    "UnitName":"Kakinada Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":14,
+    "Active":1
+  },
+  {
+    "UnitID":121,
+    "UnitName":"Allahabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":15,
+    "Active":1
+  },
+  {
+    "UnitID":122,
+    "UnitName":"Nadiad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":15,
+    "Active":1
+  },
+  {
+    "UnitID":123,
+    "UnitName":"Pali Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":15,
+    "Active":1
+  },
+  {
+    "UnitID":124,
+    "UnitName":"Malda Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":15,
+    "Active":1
+  },
+  {
+    "UnitID":125,
+    "UnitName":"Bhusawal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":15,
+    "Active":1
+  },
+  {
+    "UnitID":126,
+    "UnitName":"Bhatpara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":127,
+    "UnitName":"Sagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":128,
+    "UnitName":"Howrah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":129,
+    "UnitName":"Satara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":130,
+    "UnitName":"Dhanbad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":131,
+    "UnitName":"Ambala Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":132,
+    "UnitName":"Howrah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":133,
+    "UnitName":"Gaya Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":16,
+    "Active":1
+  },
+  {
+    "UnitID":134,
+    "UnitName":"Hindupur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":135,
+    "UnitName":"Noida Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":136,
+    "UnitName":"Jamshedpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":137,
+    "UnitName":"Adoni Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":138,
+    "UnitName":"Udupi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":139,
+    "UnitName":"Gurgaon Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":140,
+    "UnitName":"Bhilwara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":141,
+    "UnitName":"Satara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":142,
+    "UnitName":"Bilaspur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":143,
+    "UnitName":"Mira-Bhayandar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":144,
+    "UnitName":"Berhampore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":17,
+    "Active":1
+  },
+  {
+    "UnitID":145,
+    "UnitName":"Srinagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":146,
+    "UnitName":"Berhampore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":147,
+    "UnitName":"Srinagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":148,
+    "UnitName":"Guna Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":149,
+    "UnitName":"Mira-Bhayandar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":150,
+    "UnitName":"Coimbatore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":151,
+    "UnitName":"Uluberia Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":152,
+    "UnitName":"Sangli-Miraj & Kupwad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":18,
+    "Active":1
+  },
+  {
+    "UnitID":153,
+    "UnitName":"Tinsukia Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":154,
+    "UnitName":"Pudukkottai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":155,
+    "UnitName":"Begusarai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":156,
+    "UnitName":"Vasai-Virar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":157,
+    "UnitName":"Bilaspur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":158,
+    "UnitName":"Aligarh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":159,
+    "UnitName":"Darbhanga Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":160,
+    "UnitName":"Mahbubnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":161,
+    "UnitName":"Tiruvottiyur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":162,
+    "UnitName":"Bilaspur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":163,
+    "UnitName":"Chandrapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":164,
+    "UnitName":"Tiruchirappalli Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":19,
+    "Active":1
+  },
+  {
+    "UnitID":165,
+    "UnitName":"Bally Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":166,
+    "UnitName":"Delhi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":167,
+    "UnitName":"Bikaner Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":168,
+    "UnitName":"Nanded Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":169,
+    "UnitName":"Suryapet Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":170,
+    "UnitName":"Kishanganj Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":171,
+    "UnitName":"Gorakhpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":172,
+    "UnitName":"Jalgaon Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":173,
+    "UnitName":"Uluberia Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":20,
+    "Active":1
+  },
+  {
+    "UnitID":174,
+    "UnitName":"Chinsurah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":21,
+    "Active":1
+  },
+  {
+    "UnitID":175,
+    "UnitName":"Kalyan-Dombivli Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":21,
+    "Active":1
+  },
+  {
+    "UnitID":176,
+    "UnitName":"Bharatpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":21,
+    "Active":1
+  },
+  {
+    "UnitID":177,
+    "UnitName":"Secunderabad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":21,
+    "Active":1
+  },
+  {
+    "UnitID":178,
+    "UnitName":"Kulti Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":21,
+    "Active":1
+  },
+  {
+    "UnitID":179,
+    "UnitName":"Raichur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":180,
+    "UnitName":"Udupi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":181,
+    "UnitName":"Patiala Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":182,
+    "UnitName":"Belgaum Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":183,
+    "UnitName":"Nagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":184,
+    "UnitName":"Thoothukudi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":185,
+    "UnitName":"Kulti Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":22,
+    "Active":1
+  },
+  {
+    "UnitID":186,
+    "UnitName":"Kozhikode Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":187,
+    "UnitName":"Eluru Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":188,
+    "UnitName":"Nandyal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":189,
+    "UnitName":"Kollam Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":190,
+    "UnitName":"Etawah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":191,
+    "UnitName":"Ambattur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":192,
+    "UnitName":"Nagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":193,
+    "UnitName":"Silchar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":194,
+    "UnitName":"Alwar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":195,
+    "UnitName":"Alwar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":196,
+    "UnitName":"Danapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":23,
+    "Active":1
+  },
+  {
+    "UnitID":197,
+    "UnitName":"Jorhat Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":198,
+    "UnitName":"Bhopal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":199,
+    "UnitName":"Bhilwara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":200,
+    "UnitName":"Amaravati Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":201,
+    "UnitName":"Agra Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":202,
+    "UnitName":"Kavali Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":203,
+    "UnitName":"Hapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":204,
+    "UnitName":"Junagadh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":205,
+    "UnitName":"Kharagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":206,
+    "UnitName":"Rohtak Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":24,
+    "Active":1
+  },
+  {
+    "UnitID":207,
+    "UnitName":"Junagadh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":208,
+    "UnitName":"Saharsa Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":209,
+    "UnitName":"Bharatpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":210,
+    "UnitName":"Coimbatore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":211,
+    "UnitName":"Satara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":212,
+    "UnitName":"Dewas Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":213,
+    "UnitName":"Alappuzha Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":214,
+    "UnitName":"Sambhal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":215,
+    "UnitName":"Begusarai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":25,
+    "Active":1
+  },
+  {
+    "UnitID":216,
+    "UnitName":"Nellore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":217,
+    "UnitName":"Nadiad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":218,
+    "UnitName":"Tadepalligudem Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":219,
+    "UnitName":"Machilipatnam Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":220,
+    "UnitName":"Avadi Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":221,
+    "UnitName":"Bhagalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":222,
+    "UnitName":"Adoni Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":26,
+    "Active":1
+  },
+  {
+    "UnitID":223,
+    "UnitName":"Kirari Suleman Nagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":224,
+    "UnitName":"Mango Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":225,
+    "UnitName":"Sasaram Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":226,
+    "UnitName":"Gulbarga Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":227,
+    "UnitName":"Anantapuram Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":228,
+    "UnitName":"Tiruchirappalli Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":229,
+    "UnitName":"Tirupati Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":230,
+    "UnitName":"Davanagere Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":27,
+    "Active":1
+  },
+  {
+    "UnitID":231,
+    "UnitName":"Nagpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":232,
+    "UnitName":"Sambalpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":233,
+    "UnitName":"Phagwara Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":234,
+    "UnitName":"Sirsa Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":235,
+    "UnitName":"Ramgarh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":236,
+    "UnitName":"Yamunanagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":237,
+    "UnitName":"Silchar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":238,
+    "UnitName":"Siliguri Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":239,
+    "UnitName":"Aligarh Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":240,
+    "UnitName":"Muzaffarnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":28,
+    "Active":1
+  },
+  {
+    "UnitID":241,
+    "UnitName":"Kadapa Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":242,
+    "UnitName":"Dhanbad Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":243,
+    "UnitName":"Bhilai Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":244,
+    "UnitName":"Guntur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":245,
+    "UnitName":"Bettiah Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":246,
+    "UnitName":"Mango Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":29,
+    "Active":1
+  },
+  {
+    "UnitID":247,
+    "UnitName":"Motihari Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":248,
+    "UnitName":"Kozhikode Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":249,
+    "UnitName":"Hospet Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":250,
+    "UnitName":"Shahjahanpur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":251,
+    "UnitName":"Saharsa Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":252,
+    "UnitName":"Mathura Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":30,
+    "Active":1
+  },
+  {
+    "UnitID":253,
+    "UnitName":"Gandhidham Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":254,
+    "UnitName":"Baranagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":255,
+    "UnitName":"Darbhanga Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":256,
+    "UnitName":"Imphal Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":257,
+    "UnitName":"Durgapur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":258,
+    "UnitName":"Ahmednagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":259,
+    "UnitName":"Jamnagar Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":260,
+    "UnitName":"Rajkot Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":261,
+    "UnitName":"Vellore Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":262,
+    "UnitName":"Hosur Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  },
+  {
+    "UnitID":263,
+    "UnitName":"Vijayanagaram Police Station",
+    "TypeID":1,
+    "ParentUnit":null,
+    "NationalityID":1,
+    "StateID":1,
+    "DistrictID":31,
+    "Active":1
+  }
+]

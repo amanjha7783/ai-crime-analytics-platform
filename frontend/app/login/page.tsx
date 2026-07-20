@@ -1,3 +1,5 @@
+"use client";
+
 import { DashboardShell } from "@/components/dashboard-shell";
 import { LoginPanel } from "@/components/login-panel";
 import { SectionPanel } from "@/components/section-panel";

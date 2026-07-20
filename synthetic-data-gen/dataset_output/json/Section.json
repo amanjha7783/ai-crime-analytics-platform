@@ -1,0 +1,62 @@
+[
+  {
+    "SectionCode":"302",
+    "ActCode":"IPC",
+    "SectionDescription":"Murder",
+    "Active":1
+  },
+  {
+    "SectionCode":"307",
+    "ActCode":"IPC",
+    "SectionDescription":"Attempt to Murder",
+    "Active":1
+  },
+  {
+    "SectionCode":"379",
+    "ActCode":"IPC",
+    "SectionDescription":"Theft",
+    "Active":1
+  },
+  {
+    "SectionCode":"420",
+    "ActCode":"IPC",
+    "SectionDescription":"Cheating",
+    "Active":1
+  },
+  {
+    "SectionCode":"66C",
+    "ActCode":"IT",
+    "SectionDescription":"Identity Theft",
+    "Active":1
+  },
+  {
+    "SectionCode":"66D",
+    "ActCode":"IT",
+    "SectionDescription":"Cheating by personation",
+    "Active":1
+  },
+  {
+    "SectionCode":"279",
+    "ActCode":"IPC",
+    "SectionDescription":"Rash driving",
+    "Active":1
+  },
+  {
+    "SectionCode":"304A",
+    "ActCode":"IPC",
+    "SectionDescription":"Causing death by negligence",
+    "Active":1
+  },
+  {
+    "SectionCode":"20",
+    "ActCode":"NDPS",
+    "SectionDescription":"Punishment for contravention in relation to cannabis plant and cannabis",
+    "Active":1
+  },
+  {
+    "SectionCode":"21",
+    "ActCode":"NDPS",
+    "SectionDescription":"Punishment for contravention in relation to manufactured drugs and preparations",
+    "Active":1
+  }
+]

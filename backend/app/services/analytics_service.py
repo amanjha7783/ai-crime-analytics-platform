@@ -15,8 +15,11 @@ class AnalyticsService:
         self.engine = PredictionEngine()
 
     def crimes(self, **filters: object) -> list[dict]:
+        skip = filters.pop("skip", 0)
+        limit = filters.pop("limit", 5000)
         frame = self.repository.filtered(**filters)
-        return self._json_records(frame.sort_values("reported_at", ascending=False))
+        sorted_frame = frame.sort_values("reported_at", ascending=False)
+        return self._json_records(sorted_frame.iloc[skip:skip + limit])
 
     def search(self, query: str) -> dict:
         frame = self.repository.prepared()

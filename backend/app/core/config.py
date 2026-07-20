@@ -22,7 +22,7 @@ class Settings:
         "postgresql+psycopg2://crime_user:crime_password@localhost:5432/crime_ai",
     )
     redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
-    crime_data_path: str = os.getenv("CRIME_DATA_PATH", "data/processed/crimes_sample.csv")
+    crime_data_path: str = os.getenv("CRIME_DATA_PATH", "data/processed/crimes_features.csv")
     use_database: bool = os.getenv("USE_DATABASE", "false").lower() in {"1", "true", "yes"}
 
 

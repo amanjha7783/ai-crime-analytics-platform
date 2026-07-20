@@ -1,0 +1,912 @@
+[
+  {
+    "CourtID":1,
+    "CourtName":"Bagalkot District Court",
+    "DistrictID":1,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":2,
+    "CourtName":"Bagalkot District Court",
+    "DistrictID":1,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":3,
+    "CourtName":"Ballari (Bellary) District Court",
+    "DistrictID":2,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":4,
+    "CourtName":"Ballari (Bellary) District Court",
+    "DistrictID":2,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":5,
+    "CourtName":"Ballari (Bellary) District Court",
+    "DistrictID":2,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":6,
+    "CourtName":"Belagavi (Belgaum) District Court",
+    "DistrictID":3,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":7,
+    "CourtName":"Belagavi (Belgaum) District Court",
+    "DistrictID":3,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":8,
+    "CourtName":"Belagavi (Belgaum) District Court",
+    "DistrictID":3,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":9,
+    "CourtName":"Belagavi (Belgaum) District Court",
+    "DistrictID":3,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":10,
+    "CourtName":"Belagavi (Belgaum) District Court",
+    "DistrictID":3,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":11,
+    "CourtName":"Bengaluru (Bangalore) Rural District Court",
+    "DistrictID":4,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":12,
+    "CourtName":"Bengaluru (Bangalore) Rural District Court",
+    "DistrictID":4,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":13,
+    "CourtName":"Bengaluru (Bangalore) Rural District Court",
+    "DistrictID":4,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":14,
+    "CourtName":"Bengaluru (Bangalore) Rural District Court",
+    "DistrictID":4,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":15,
+    "CourtName":"Bengaluru (Bangalore) Rural District Court",
+    "DistrictID":4,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":16,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":17,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":18,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":19,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":20,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":21,
+    "CourtName":"Bengaluru (Bangalore) Urban District Court",
+    "DistrictID":5,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":22,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":23,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":24,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":25,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":26,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":27,
+    "CourtName":"Bidar District Court",
+    "DistrictID":6,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":28,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":29,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":30,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":31,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":32,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":33,
+    "CourtName":"Chamarajanagar District Court",
+    "DistrictID":7,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":34,
+    "CourtName":"Chikballapur District Court",
+    "DistrictID":8,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":35,
+    "CourtName":"Chikballapur District Court",
+    "DistrictID":8,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":36,
+    "CourtName":"Chikballapur District Court",
+    "DistrictID":8,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":37,
+    "CourtName":"Chikballapur District Court",
+    "DistrictID":8,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":38,
+    "CourtName":"Chikballapur District Court",
+    "DistrictID":8,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":39,
+    "CourtName":"Chikkamagaluru (Chikmagalur) District Court",
+    "DistrictID":9,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":40,
+    "CourtName":"Chikkamagaluru (Chikmagalur) District Court",
+    "DistrictID":9,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":41,
+    "CourtName":"Chitradurga District Court",
+    "DistrictID":10,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":42,
+    "CourtName":"Chitradurga District Court",
+    "DistrictID":10,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":43,
+    "CourtName":"Dakshina Kannada District Court",
+    "DistrictID":11,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":44,
+    "CourtName":"Dakshina Kannada District Court",
+    "DistrictID":11,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":45,
+    "CourtName":"Davanagere District Court",
+    "DistrictID":12,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":46,
+    "CourtName":"Davanagere District Court",
+    "DistrictID":12,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":47,
+    "CourtName":"Davanagere District Court",
+    "DistrictID":12,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":48,
+    "CourtName":"Davanagere District Court",
+    "DistrictID":12,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":49,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":50,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":51,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":52,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":53,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":54,
+    "CourtName":"Dharwad District Court",
+    "DistrictID":13,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":55,
+    "CourtName":"Gadag District Court",
+    "DistrictID":14,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":56,
+    "CourtName":"Gadag District Court",
+    "DistrictID":14,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":57,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":58,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":59,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":60,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":61,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":62,
+    "CourtName":"Hassan District Court",
+    "DistrictID":15,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":63,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":64,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":65,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":66,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":67,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":68,
+    "CourtName":"Haveri District Court",
+    "DistrictID":16,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":69,
+    "CourtName":"Kalaburagi (Gulbarga) District Court",
+    "DistrictID":17,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":70,
+    "CourtName":"Kalaburagi (Gulbarga) District Court",
+    "DistrictID":17,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":71,
+    "CourtName":"Kalaburagi (Gulbarga) District Court",
+    "DistrictID":17,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":72,
+    "CourtName":"Kalaburagi (Gulbarga) District Court",
+    "DistrictID":17,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":73,
+    "CourtName":"Kodagu District Court",
+    "DistrictID":18,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":74,
+    "CourtName":"Kodagu District Court",
+    "DistrictID":18,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":75,
+    "CourtName":"Kodagu District Court",
+    "DistrictID":18,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":76,
+    "CourtName":"Kodagu District Court",
+    "DistrictID":18,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":77,
+    "CourtName":"Kodagu District Court",
+    "DistrictID":18,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":78,
+    "CourtName":"Kolar District Court",
+    "DistrictID":19,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":79,
+    "CourtName":"Kolar District Court",
+    "DistrictID":19,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":80,
+    "CourtName":"Koppal District Court",
+    "DistrictID":20,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":81,
+    "CourtName":"Koppal District Court",
+    "DistrictID":20,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":82,
+    "CourtName":"Koppal District Court",
+    "DistrictID":20,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":83,
+    "CourtName":"Koppal District Court",
+    "DistrictID":20,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":84,
+    "CourtName":"Mandya District Court",
+    "DistrictID":21,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":85,
+    "CourtName":"Mandya District Court",
+    "DistrictID":21,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":86,
+    "CourtName":"Mandya District Court",
+    "DistrictID":21,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":87,
+    "CourtName":"Mandya District Court",
+    "DistrictID":21,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":88,
+    "CourtName":"Mandya District Court",
+    "DistrictID":21,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":89,
+    "CourtName":"Mysuru (Mysore) District Court",
+    "DistrictID":22,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":90,
+    "CourtName":"Mysuru (Mysore) District Court",
+    "DistrictID":22,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":91,
+    "CourtName":"Mysuru (Mysore) District Court",
+    "DistrictID":22,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":92,
+    "CourtName":"Mysuru (Mysore) District Court",
+    "DistrictID":22,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":93,
+    "CourtName":"Mysuru (Mysore) District Court",
+    "DistrictID":22,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":94,
+    "CourtName":"Raichur District Court",
+    "DistrictID":23,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":95,
+    "CourtName":"Raichur District Court",
+    "DistrictID":23,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":96,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":97,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":98,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":99,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":100,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":101,
+    "CourtName":"Ramanagara District Court",
+    "DistrictID":24,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":102,
+    "CourtName":"Shivamogga (Shimoga) District Court",
+    "DistrictID":25,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":103,
+    "CourtName":"Shivamogga (Shimoga) District Court",
+    "DistrictID":25,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":104,
+    "CourtName":"Shivamogga (Shimoga) District Court",
+    "DistrictID":25,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":105,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":106,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":107,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":108,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":109,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":110,
+    "CourtName":"Tumakuru (Tumkur) District Court",
+    "DistrictID":26,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":111,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":112,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":113,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":114,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":115,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":116,
+    "CourtName":"Udupi District Court",
+    "DistrictID":27,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":117,
+    "CourtName":"Uttara Kannada (Karwar) District Court",
+    "DistrictID":28,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":118,
+    "CourtName":"Uttara Kannada (Karwar) District Court",
+    "DistrictID":28,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":119,
+    "CourtName":"Uttara Kannada (Karwar) District Court",
+    "DistrictID":28,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":120,
+    "CourtName":"Vijayapura (Bijapur) District Court",
+    "DistrictID":29,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":121,
+    "CourtName":"Vijayapura (Bijapur) District Court",
+    "DistrictID":29,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":122,
+    "CourtName":"Vijayapura (Bijapur) District Court",
+    "DistrictID":29,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":123,
+    "CourtName":"Vijayapura (Bijapur) District Court",
+    "DistrictID":29,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":124,
+    "CourtName":"Vijayapura (Bijapur) District Court",
+    "DistrictID":29,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":125,
+    "CourtName":"Yadgir District Court",
+    "DistrictID":30,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":126,
+    "CourtName":"Yadgir District Court",
+    "DistrictID":30,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":127,
+    "CourtName":"Yadgir District Court",
+    "DistrictID":30,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":128,
+    "CourtName":"Vijayanagara District Court",
+    "DistrictID":31,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":129,
+    "CourtName":"Vijayanagara District Court",
+    "DistrictID":31,
+    "StateID":1,
+    "Active":1
+  },
+  {
+    "CourtID":130,
+    "CourtName":"Vijayanagara District Court",
+    "DistrictID":31,
+    "StateID":1,
+    "Active":1
+  }
+]

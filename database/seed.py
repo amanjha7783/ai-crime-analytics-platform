@@ -10,7 +10,7 @@ from backend.app.core.security import hash_password
 from ml.prediction.engine import PredictionEngine
 
 
-DATA_PATH = Path(os.getenv("CRIME_DATA_PATH", "data/processed/crimes_sample.csv"))
+DATA_PATH = Path(os.getenv("CRIME_DATA_PATH", "data/processed/crimes_features.csv"))
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
     "postgresql+psycopg2://crime_user:crime_password@localhost:5432/crime_ai",
@@ -346,7 +346,17 @@ def seed() -> None:
                         victim_age,
                         weapon_used,
                         location,
-                        risk_score
+                        risk_score,
+                        risk_level,
+                        hotspot_score,
+                        threat_level,
+                        confidence_score,
+                        trend_score,
+                        seasonal_pattern,
+                        risk_zone,
+                        patrol_recommendation,
+                        day_night_indicator,
+                        crime_forecast
                     )
                     SELECT
                         :fir_id,
@@ -359,7 +369,17 @@ def seed() -> None:
                         :victim_age,
                         :weapon_used,
                         ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326),
-                        :risk_score
+                        :risk_score,
+                        :risk_level,
+                        :hotspot_score,
+                        :threat_level,
+                        :confidence_score,
+                        :trend_score,
+                        :seasonal_pattern,
+                        :risk_zone,
+                        :patrol_recommendation,
+                        :day_night_indicator,
+                        :crime_forecast
                     FROM districts d
                     JOIN police_stations ps ON ps.district_id = d.id AND ps.name = :police_station
                     WHERE d.name = :district
@@ -379,6 +399,16 @@ def seed() -> None:
                     "longitude": float(row["longitude"]),
                     "latitude": float(row["latitude"]),
                     "risk_score": float(row["risk_score"]),
+                    "risk_level": row["risk_level"],
+                    "hotspot_score": float(row.get("historical_hotspot_score", row.get("hotspot_score", 0))),
+                    "threat_level": row.get("threat_level", "Unknown"),
+                    "confidence_score": float(row.get("confidence_score", 0)),
+                    "trend_score": float(row.get("trend_score", 0)),
+                    "seasonal_pattern": row.get("seasonal_pattern", "Unknown"),
+                    "risk_zone": row.get("risk_zone", "Unknown"),
+                    "patrol_recommendation": row.get("patrol_recommendation", "Unknown"),
+                    "day_night_indicator": row.get("day_night_indicator", "Unknown"),
+                    "crime_forecast": row.get("crime_forecast", "Unknown"),
                 },
             )
             connection.execute(
