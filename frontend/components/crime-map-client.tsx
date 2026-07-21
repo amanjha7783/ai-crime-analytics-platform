@@ -8,7 +8,7 @@ import type { CrimeRecord, Hotspot } from "@/lib/api";
 import { Layers, MapPin, Search, Calendar, Activity, X } from "lucide-react";
 
 const isBrowser = typeof window !== "undefined";
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (isBrowser ? "" : "http://127.0.0.1:8000");
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
 function parseYear(dateString: string) {
   if (!dateString) return null;
@@ -280,7 +280,7 @@ export function CrimeMapClient() {
             {fetchError && (
               <div className="mt-4 p-3 rounded-lg bg-orange-50 border border-orange-200 text-xs text-orange-800 flex items-start gap-2">
                 <div className="mt-0.5">⚠️</div>
-                <p><strong>Offline Mode:</strong> Could not reach live backend. Displaying local fallback dataset.</p>
+                <p><strong>Offline Mode:</strong> Could not reach live backend. Map data is currently unavailable.</p>
               </div>
             )}
           </div>

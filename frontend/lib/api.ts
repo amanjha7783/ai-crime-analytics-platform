@@ -77,8 +77,7 @@ export type PredictionData = {
   };
 };
 
-const isBrowser = typeof window !== "undefined";
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || (isBrowser ? "" : "http://127.0.0.1:8000");
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
 function getAuthHeaders(): Record<string, string> {
   if (typeof window === "undefined") {
@@ -88,176 +87,55 @@ function getAuthHeaders(): Record<string, string> {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-async function fetchJson<T>(path: string, fallback: T): Promise<T> {
-  try {
-    const response = await fetch(`${API_BASE_URL}/api${path}`, {
-      next: { revalidate: 30 },
-      headers: {
-        "Content-Type": "application/json",
-        ...getAuthHeaders(),
-      },
-    });
-    if (!response.ok) {
-      return fallback;
-    }
-    return (await response.json()) as T;
-  } catch {
-    return fallback;
+async function fetchJson<T>(path: string): Promise<T> {
+  const response = await fetch(`${API_BASE_URL}/api${path}`, {
+    next: { revalidate: 30 },
+    headers: {
+      "Content-Type": "application/json",
+      ...getAuthHeaders(),
+    },
+  });
+  
+  if (!response.ok) {
+    throw new Error(`API request failed with status ${response.status}`);
   }
+  
+  return (await response.json()) as T;
 }
 
-export const fallbackDashboard: DashboardData = {
-  kpis: {
-    total_crimes: 20,
-    active_cases: 13,
-    solved_cases: 7,
-    repeat_offenders: 3,
-    high_risk_zones: 2,
-    top_district: "Bengaluru Urban"
-  },
-  district_ranking: [
-    { district: "Bengaluru Urban", crime_count: 7 },
-    { district: "Mysuru", crime_count: 2 },
-    { district: "Mangaluru", crime_count: 2 },
-    { district: "Hubballi Dharwad", crime_count: 2 }
-  ],
-  trend: [
-    { period: "2026-01", crime_count: 6 },
-    { period: "2026-02", crime_count: 6 },
-    { period: "2026-03", crime_count: 8 }
-  ],
-  crime_mix: [
-    { crime_type: "Theft", count: 4 },
-    { crime_type: "Assault", count: 4 },
-    { crime_type: "Cyber Crime", count: 4 },
-    { crime_type: "Burglary", count: 3 }
-  ],
-  alerts: [
-    {
-      district: "Bengaluru Urban",
-      date: "2026-03-20",
-      crime_count: 1,
-      severity: "Watch",
-      message: "Unusual activity pattern detected in Bengaluru Urban"
-    }
-  ]
-};
-
-export const fallbackHotspots: Hotspot[] = [
-  { district: "Bengaluru Urban", crime_count: 7, latitude: 12.972, longitude: 77.638, confidence: 0.88, risk_level: "High" },
-  { district: "Mangaluru", crime_count: 2, latitude: 12.914, longitude: 74.856, confidence: 0.71, risk_level: "High" },
-  { district: "Mysuru", crime_count: 2, latitude: 12.296, longitude: 76.639, confidence: 0.62, risk_level: "Medium" }
-];
-
-export const fallbackCrimes: CrimeRecord[] = [
-  {
-    fir_id: "FIR-2026-0001",
-    crime_type: "Theft",
-    district: "Bengaluru Urban",
-    police_station: "Central",
-    reported_at: "2026-01-15 21:15:00",
-    latitude: 12.9716,
-    longitude: 77.5946,
-    status: "Open",
-    offender_id: "OFF-1001",
-    risk_score: 68,
-    risk_level: "Medium"
-  },
-  {
-    fir_id: "FIR-2026-0016",
-    crime_type: "Drug Trafficking",
-    district: "Mangaluru",
-    police_station: "Pandeshwar",
-    reported_at: "2026-03-09 00:30:00",
-    latitude: 12.9144,
-    longitude: 74.8565,
-    status: "Open",
-    offender_id: "OFF-1007",
-    risk_score: 91,
-    risk_level: "High"
-  }
-];
-
-export const fallbackNetwork: NetworkData = {
-  nodes: [
-    { id: "OFF-1001", label: "OFF-1001", type: "offender", weight: 4 },
-    { id: "OFF-1003", label: "OFF-1003", type: "offender", weight: 3 },
-    { id: "Bengaluru Urban", label: "Bengaluru Urban", type: "district", weight: 7 },
-    { id: "Mysuru", label: "Mysuru", type: "district", weight: 2 }
-  ],
-  edges: [
-    { source: "OFF-1001", target: "Bengaluru Urban", type: "reported_in", weight: 4 },
-    { source: "OFF-1001", target: "Mysuru", type: "reported_in", weight: 4 }
-  ],
-  central_criminals: [{ id: "OFF-1001", centrality: 0.2 }],
-  communities: ["Bengaluru Urban", "Mysuru"]
-};
-
 export function getDashboard(): Promise<DashboardData> {
-  return fetchJson("/dashboard", fallbackDashboard);
+  return fetchJson<DashboardData>("/dashboard");
 }
 
 export function getCrimes(): Promise<CrimeRecord[]> {
-  return fetchJson("/crimes", fallbackCrimes);
+  return fetchJson<CrimeRecord[]>("/crimes");
 }
 
 export function getHotspots(): Promise<Hotspot[]> {
-  return fetchJson("/hotspots", fallbackHotspots);
+  return fetchJson<Hotspot[]>("/hotspots");
 }
 
-export function getNetwork(): Promise<NetworkData> {
-  return fetchJson("/network", fallbackNetwork);
+export function getNetwork(focusNode?: string, maxNodes: number = 500): Promise<NetworkData> {
+  const url = focusNode ? `/network?focus_node=${encodeURIComponent(focusNode)}&max_nodes=${maxNodes}` : `/network?max_nodes=${maxNodes}`;
+  return fetchJson<NetworkData>(url);
 }
 
 export function getPredictions(): Promise<PredictionData> {
-  return fetchJson<PredictionData>("/predictions", {
-    classifications: [],
-    hotspots: fallbackHotspots,
-    risk_scores: [],
-    trend_forecast: fallbackDashboard.trend,
-    explainability: { global_importance: [] }
-  });
+  return fetchJson<PredictionData>("/predictions");
 }
 
-export function getAnomalies() {
-  return fetchJson("/anomalies", fallbackDashboard.alerts);
+export function getAnomalies(): Promise<DashboardData['alerts']> {
+  return fetchJson<DashboardData['alerts']>("/anomalies");
 }
 
 export function getRepeatOffenders(): Promise<RepeatOffender[]> {
-  return fetchJson("/repeat-offenders", [
-    {
-      offender_id: "OFF-1001",
-      crime_count: 4,
-      last_seen: "2026-03-16",
-      districts: ["Bengaluru Urban", "Mysuru", "Kalaburagi"],
-      crime_types: ["Assault", "Theft"],
-      risk_score: 78
-    }
-  ]);
+  return fetchJson<RepeatOffender[]>("/repeat-offenders");
 }
 
 export function getSocioEconomic(): Promise<SocioEconomicData> {
-  return fetchJson("/analytics/socio-economic", {
-    factors: [
-      {
-        district: "Bengaluru Urban",
-        crime_count: 7,
-        population_density: 12000,
-        income_category: "High",
-        risk_score: 70,
-        high_risk_cases: 3
-      }
-    ],
-    correlation: 0.62,
-    insight: "Higher-density urban districts show stronger crime concentration in the current demo dataset."
-  });
+  return fetchJson<SocioEconomicData>("/analytics/socio-economic");
 }
 
-export function getReports() {
-  return fetchJson("/reports", {
-    title: "Karnataka Crime Intelligence Brief",
-    generated_for: "Karnataka State Police Datathon 2026",
-    summary: "Demo intelligence brief from fallback data.",
-    sections: []
-  });
+export function getReports(): Promise<any> {
+  return fetchJson<any>("/reports");
 }

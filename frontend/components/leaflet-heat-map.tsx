@@ -106,68 +106,68 @@ export function LeafletHeatMap({
     const showPredictive = activeLayers.includes("Predictive Spread");
     const showTemporal = activeLayers.includes("Temporal Decay");
 
-    // 1. Predictive Spread (Orange halos around hotspots)
+    // 1. Predictive Spread (Magenta halos around hotspots)
     if (showPredictive) {
-      const hotspots = crimes.filter((c, i) => i % 50 === 0 && c.risk_level === "High"); // Mocking hotspot centers for spread
+      const hotspots = crimes.filter((c, i) => i % 50 === 0 && c.risk_level === "High");
       hotspots.forEach(hotspot => {
         L.circle([hotspot.latitude, hotspot.longitude], {
-          radius: 8000,
-          color: "#f97316",
-          fillColor: "#fb923c",
-          fillOpacity: 0.1,
-          weight: 1,
+          radius: 6000,
+          color: "#d946ef", // Neon Magenta/Pink
+          fillColor: "#e879f9",
+          fillOpacity: 0.15,
+          weight: 2,
           dashArray: "5, 10"
         }).addTo(map);
       });
     }
 
-    // 2. High-Risk Zones (Red circles on high-risk crimes)
+    // 2. High-Risk Zones (Neon Cyan circles)
     if (showHighRisk) {
       const highRisk = crimes.filter(c => c.risk_level === "High");
       highRisk.forEach((crime) => {
         L.circleMarker([crime.latitude, crime.longitude], {
-          radius: 5,
-          color: "#ef4444",
-          fillColor: "#b91c1c",
-          fillOpacity: 0.8,
+          radius: 4,
+          color: "#06b6d4", // Neon Cyan
+          fillColor: "#22d3ee",
+          fillOpacity: 0.9,
           weight: 1,
         }).bindPopup(`High Risk FIR: ${crime.fir_id}`).addTo(map);
       });
     }
-
-    // 3. Crime Density Heatmap with optional Temporal Decay
-    if (showHeat) {
+    
+    // 3. Temporal Decay (Neon Yellow circles for older crimes)
+    if (showTemporal) {
       const now = new Date();
-      const heatData = crimes.map((crime) => {
-        let intensity = 1.0;
-        
-        // Temporal decay: Older crimes have lower intensity
-        if (showTemporal) {
-          const crimeDate = new Date(crime.reported_at);
-          const daysOld = (now.getTime() - crimeDate.getTime()) / (1000 * 3600 * 24);
-          // Decrease intensity by 0.1 for every 100 days old, minimum 0.2
-          intensity = Math.max(0.2, 1.0 - (daysOld / 1000));
-        }
-        
-        return [crime.latitude, crime.longitude, intensity];
+      const olderCrimes = crimes.filter(c => {
+        const daysOld = (now.getTime() - new Date(c.reported_at).getTime()) / (1000 * 3600 * 24);
+        return daysOld > 180; // Older than 6 months
       });
       
+      olderCrimes.forEach((crime) => {
+        L.circleMarker([crime.latitude, crime.longitude], {
+          radius: 3,
+          color: "#eab308", // Neon Yellow
+          fillColor: "#fde047",
+          fillOpacity: 0.5,
+          weight: 1,
+        }).addTo(map);
+      });
+    }
+
+    // 4. Crime Density Heatmap
+    if (showHeat) {
+      const heatData = crimes.map((crime) => [crime.latitude, crime.longitude, 1.0]);
+      
       const heatLayer = L.heatLayer(heatData, {
-        radius: 25, // Increased radius for better visibility
-        blur: 20,   // Increased blur for a smoother thermal effect
+        radius: 22,
+        blur: 18,
         maxZoom: 17,
         max: 1.0,
-        gradient: showTemporal ? {
+        gradient: {
           0.4: '#3b82f6', // blue
-          0.6: '#a855f7', // purple
-          0.8: '#ec4899', // pink
-          1.0: '#ef4444'  // red (focus on recent/intense)
-        } : {
-          0.4: 'blue',
-          0.6: 'cyan',
-          0.7: 'lime',
-          0.8: 'yellow',
-          1.0: 'red'
+          0.6: '#22c55e', // green
+          0.8: '#eab308', // yellow
+          1.0: '#ef4444'  // red
         }
       });
       

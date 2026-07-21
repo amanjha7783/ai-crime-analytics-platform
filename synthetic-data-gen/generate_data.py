@@ -234,8 +234,16 @@ for i in range(1, num_cases + 1):
     case_no = f"{year}{i:05d}"
     
     # Generate coordinates based roughly on Karnataka (Lat: 11.5 to 18.5, Lon: 74.0 to 78.5)
-    lat = round(random.uniform(11.5, 18.5), 6)
-    lon = round(random.uniform(74.0, 78.5), 6)
+    if district['DistrictName'] == "Bengaluru (Bangalore) Urban":
+        # Bengaluru Urban bounding box
+        lat = round(random.uniform(12.8, 13.1), 6)
+        lon = round(random.uniform(77.4, 77.7), 6)
+    else:
+        # Generic Karnataka for others, but slightly offset by district ID to group them roughly
+        lat_base = 11.5 + (unit['DistrictID'] % 5) * 1.2
+        lon_base = 74.0 + (unit['DistrictID'] % 4) * 1.0
+        lat = round(random.uniform(lat_base, lat_base + 1.0), 6)
+        lon = round(random.uniform(lon_base, lon_base + 0.8), 6)
 
     case_master_data.append({
         "CaseMasterID": i,

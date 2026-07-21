@@ -1,0 +1,131 @@
+CourtID,CourtName,DistrictID,StateID,Active
+1,Bagalkot District Court,1,1,1
+2,Bagalkot District Court,1,1,1
+3,Ballari (Bellary) District Court,2,1,1
+4,Ballari (Bellary) District Court,2,1,1
+5,Ballari (Bellary) District Court,2,1,1
+6,Belagavi (Belgaum) District Court,3,1,1
+7,Belagavi (Belgaum) District Court,3,1,1
+8,Belagavi (Belgaum) District Court,3,1,1
+9,Belagavi (Belgaum) District Court,3,1,1
+10,Belagavi (Belgaum) District Court,3,1,1
+11,Bengaluru (Bangalore) Rural District Court,4,1,1
+12,Bengaluru (Bangalore) Rural District Court,4,1,1
+13,Bengaluru (Bangalore) Rural District Court,4,1,1
+14,Bengaluru (Bangalore) Rural District Court,4,1,1
+15,Bengaluru (Bangalore) Rural District Court,4,1,1
+16,Bengaluru (Bangalore) Urban District Court,5,1,1
+17,Bengaluru (Bangalore) Urban District Court,5,1,1
+18,Bengaluru (Bangalore) Urban District Court,5,1,1
+19,Bengaluru (Bangalore) Urban District Court,5,1,1
+20,Bengaluru (Bangalore) Urban District Court,5,1,1
+21,Bengaluru (Bangalore) Urban District Court,5,1,1
+22,Bidar District Court,6,1,1
+23,Bidar District Court,6,1,1
+24,Bidar District Court,6,1,1
+25,Bidar District Court,6,1,1
+26,Bidar District Court,6,1,1
+27,Bidar District Court,6,1,1
+28,Chamarajanagar District Court,7,1,1
+29,Chamarajanagar District Court,7,1,1
+30,Chamarajanagar District Court,7,1,1
+31,Chamarajanagar District Court,7,1,1
+32,Chamarajanagar District Court,7,1,1
+33,Chamarajanagar District Court,7,1,1
+34,Chikballapur District Court,8,1,1
+35,Chikballapur District Court,8,1,1
+36,Chikballapur District Court,8,1,1
+37,Chikballapur District Court,8,1,1
+38,Chikballapur District Court,8,1,1
+39,Chikkamagaluru (Chikmagalur) District Court,9,1,1
+40,Chikkamagaluru (Chikmagalur) District Court,9,1,1
+41,Chitradurga District Court,10,1,1
+42,Chitradurga District Court,10,1,1
+43,Dakshina Kannada District Court,11,1,1
+44,Dakshina Kannada District Court,11,1,1
+45,Davanagere District Court,12,1,1
+46,Davanagere District Court,12,1,1
+47,Davanagere District Court,12,1,1
+48,Davanagere District Court,12,1,1
+49,Dharwad District Court,13,1,1
+50,Dharwad District Court,13,1,1
+51,Dharwad District Court,13,1,1
+52,Dharwad District Court,13,1,1
+53,Dharwad District Court,13,1,1
+54,Dharwad District Court,13,1,1
+55,Gadag District Court,14,1,1
+56,Gadag District Court,14,1,1
+57,Hassan District Court,15,1,1
+58,Hassan District Court,15,1,1
+59,Hassan District Court,15,1,1
+60,Hassan District Court,15,1,1
+61,Hassan District Court,15,1,1
+62,Hassan District Court,15,1,1
+63,Haveri District Court,16,1,1
+64,Haveri District Court,16,1,1
+65,Haveri District Court,16,1,1
+66,Haveri District Court,16,1,1
+67,Haveri District Court,16,1,1
+68,Haveri District Court,16,1,1
+69,Kalaburagi (Gulbarga) District Court,17,1,1
+70,Kalaburagi (Gulbarga) District Court,17,1,1
+71,Kalaburagi (Gulbarga) District Court,17,1,1
+72,Kalaburagi (Gulbarga) District Court,17,1,1
+73,Kodagu District Court,18,1,1
+74,Kodagu District Court,18,1,1
+75,Kodagu District Court,18,1,1
+76,Kodagu District Court,18,1,1
+77,Kodagu District Court,18,1,1
+78,Kolar District Court,19,1,1
+79,Kolar District Court,19,1,1
+80,Koppal District Court,20,1,1
+81,Koppal District Court,20,1,1
+82,Koppal District Court,20,1,1
+83,Koppal District Court,20,1,1
+84,Mandya District Court,21,1,1
+85,Mandya District Court,21,1,1
+86,Mandya District Court,21,1,1
+87,Mandya District Court,21,1,1
+88,Mandya District Court,21,1,1
+89,Mysuru (Mysore) District Court,22,1,1
+90,Mysuru (Mysore) District Court,22,1,1
+91,Mysuru (Mysore) District Court,22,1,1
+92,Mysuru (Mysore) District Court,22,1,1
+93,Mysuru (Mysore) District Court,22,1,1
+94,Raichur District Court,23,1,1
+95,Raichur District Court,23,1,1
+96,Ramanagara District Court,24,1,1
+97,Ramanagara District Court,24,1,1
+98,Ramanagara District Court,24,1,1
+99,Ramanagara District Court,24,1,1
+100,Ramanagara District Court,24,1,1
+101,Ramanagara District Court,24,1,1
+102,Shivamogga (Shimoga) District Court,25,1,1
+103,Shivamogga (Shimoga) District Court,25,1,1
+104,Shivamogga (Shimoga) District Court,25,1,1
+105,Tumakuru (Tumkur) District Court,26,1,1
+106,Tumakuru (Tumkur) District Court,26,1,1
+107,Tumakuru (Tumkur) District Court,26,1,1
+108,Tumakuru (Tumkur) District Court,26,1,1
+109,Tumakuru (Tumkur) District Court,26,1,1
+110,Tumakuru (Tumkur) District Court,26,1,1
+111,Udupi District Court,27,1,1
+112,Udupi District Court,27,1,1
+113,Udupi District Court,27,1,1
+114,Udupi District Court,27,1,1
+115,Udupi District Court,27,1,1
+116,Udupi District Court,27,1,1
+117,Uttara Kannada (Karwar) District Court,28,1,1
+118,Uttara Kannada (Karwar) District Court,28,1,1
+119,Uttara Kannada (Karwar) District Court,28,1,1
+120,Vijayapura (Bijapur) District Court,29,1,1
+121,Vijayapura (Bijapur) District Court,29,1,1
+122,Vijayapura (Bijapur) District Court,29,1,1
+123,Vijayapura (Bijapur) District Court,29,1,1
+124,Vijayapura (Bijapur) District Court,29,1,1
+125,Yadgir District Court,30,1,1
+126,Yadgir District Court,30,1,1
+127,Yadgir District Court,30,1,1
+128,Vijayanagara District Court,31,1,1
+129,Vijayanagara District Court,31,1,1
+130,Vijayanagara District Court,31,1,1

@@ -1,0 +1,86 @@
+[
+  {
+    "CrimeSubHeadID":1,
+    "CrimeHeadID":1,
+    "CrimeHeadName":"Murder",
+    "SeqID":1
+  },
+  {
+    "CrimeSubHeadID":2,
+    "CrimeHeadID":1,
+    "CrimeHeadName":"Assault",
+    "SeqID":2
+  },
+  {
+    "CrimeSubHeadID":3,
+    "CrimeHeadID":2,
+    "CrimeHeadName":"Theft",
+    "SeqID":3
+  },
+  {
+    "CrimeSubHeadID":4,
+    "CrimeHeadID":2,
+    "CrimeHeadName":"Burglary",
+    "SeqID":4
+  },
+  {
+    "CrimeSubHeadID":5,
+    "CrimeHeadID":3,
+    "CrimeHeadName":"Phishing",
+    "SeqID":5
+  },
+  {
+    "CrimeSubHeadID":6,
+    "CrimeHeadID":3,
+    "CrimeHeadName":"Identity Theft",
+    "SeqID":6
+  },
+  {
+    "CrimeSubHeadID":7,
+    "CrimeHeadID":4,
+    "CrimeHeadName":"Fraud",
+    "SeqID":7
+  },
+  {
+    "CrimeSubHeadID":8,
+    "CrimeHeadID":4,
+    "CrimeHeadName":"Counterfeiting",
+    "SeqID":8
+  },
+  {
+    "CrimeSubHeadID":9,
+    "CrimeHeadID":5,
+    "CrimeHeadName":"Domestic Violence",
+    "SeqID":9
+  },
+  {
+    "CrimeSubHeadID":10,
+    "CrimeHeadID":5,
+    "CrimeHeadName":"Sexual Harassment",
+    "SeqID":10
+  },
+  {
+    "CrimeSubHeadID":11,
+    "CrimeHeadID":6,
+    "CrimeHeadName":"Drug Trafficking",
+    "SeqID":11
+  },
+  {
+    "CrimeSubHeadID":12,
+    "CrimeHeadID":6,
+    "CrimeHeadName":"Drug Possession",
+    "SeqID":12
+  },
+  {
+    "CrimeSubHeadID":13,
+    "CrimeHeadID":7,
+    "CrimeHeadName":"Fatal Accident",
+    "SeqID":13
+  },
+  {
+    "CrimeSubHeadID":14,
+    "CrimeHeadID":7,
+    "CrimeHeadName":"DUI",
+    "SeqID":14
+  }
+]

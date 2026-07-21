@@ -1,0 +1,38 @@
+[
+  {
+    "RankID":1,
+    "RankName":"Constable",
+    "Hierarchy":6,
+    "Active":1
+  },
+  {
+    "RankID":2,
+    "RankName":"Head Constable",
+    "Hierarchy":5,
+    "Active":1
+  },
+  {
+    "RankID":3,
+    "RankName":"Assistant Sub-Inspector (ASI)",
+    "Hierarchy":4,
+    "Active":1
+  },
+  {
+    "RankID":4,
+    "RankName":"Sub-Inspector (SI)",
+    "Hierarchy":3,
+    "Active":1
+  },
+  {
+    "RankID":5,
+    "RankName":"Inspector (PI)",
+    "Hierarchy":2,
+    "Active":1
+  },
+  {
+    "RankID":6,
+    "RankName":"Deputy Superintendent (DSP)",
+    "Hierarchy":1,
+    "Active":1
+  }
+]

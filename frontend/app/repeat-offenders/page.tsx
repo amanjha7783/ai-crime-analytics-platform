@@ -1,7 +1,6 @@
 import { DashboardShell } from "@/components/dashboard-shell";
-import { DataTable } from "@/components/data-table";
-import { SectionPanel } from "@/components/section-panel";
 import { getRepeatOffenders } from "@/lib/api";
+import { RepeatOffendersDashboard } from "./repeat-offenders-dashboard";
 
 export default async function RepeatOffendersPage() {
   const offenders = await getRepeatOffenders();
@@ -16,9 +15,16 @@ export default async function RepeatOffendersPage() {
 
   return (
     <DashboardShell>
-      <SectionPanel title="Repeat Offender Risk Timeline">
-        <DataTable columns={["offender_id", "crime_count", "last_seen", "districts", "crime_types", "risk_score"]} rows={rows} />
-      </SectionPanel>
+      <div className="flex flex-col gap-6">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight">Repeat Offenders Tracking</h1>
+          <p className="text-muted-foreground">
+            Monitor high-risk individuals, their criminal history, and geographical movement.
+          </p>
+        </div>
+        
+        <RepeatOffendersDashboard offenders={rows} />
+      </div>
     </DashboardShell>
   );
 }

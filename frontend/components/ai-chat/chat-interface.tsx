@@ -6,7 +6,7 @@ import { ChatInput } from "./chat-input";
 import { useChatContext } from "./chat-context";
 
 export function ChatInterface() {
-  const { messages, input, handleInputChange, handleSubmit, stop, isLoading, error } = useChatContext();
+  const { messages, input, setInput, sendMessage, stop, isLoading, error } = useChatContext();
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Auto-scroll to bottom on new messages
@@ -49,7 +49,7 @@ export function ChatInterface() {
           <div className="flex justify-start mb-6 gap-4">
             <div className="glass glass-frame rounded-2xl rounded-tl-sm px-5 py-3.5 shadow-sm text-sm text-red-400 bg-red-500/10 border-red-500/20">
               <p className="font-semibold mb-1">Error</p>
-              <p>{error.message || "An error occurred while generating a response. Please try again."}</p>
+              <p>{error instanceof Error ? error.message : "An error occurred while generating a response. Please try again."}</p>
             </div>
           </div>
         )}
@@ -58,8 +58,8 @@ export function ChatInterface() {
       <div className="p-4 shrink-0" data-html2canvas-ignore>
         <ChatInput 
           input={input}
-          handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit}
+          setInput={setInput}
+          sendMessage={sendMessage}
           isLoading={isLoading}
           stop={stop}
         />

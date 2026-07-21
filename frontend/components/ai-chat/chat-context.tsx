@@ -1,26 +1,23 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import React, { createContext, useContext, useEffect, useState, ReactNode, useMemo } from "react";
 import { useChat } from "@ai-sdk/react";
-import { UIMessage, DefaultChatTransport } from "ai";
+import { UIMessage } from "ai";
 import { useAuth } from "@/components/auth-context";
 
 interface ChatContextType {
   messages: UIMessage[];
   input: string;
-  handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => void;
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  sendMessage: (message: any) => void;
+  setInput: React.Dispatch<React.SetStateAction<string>>;
+  sendMessage: (text: string) => void;
   reload: () => void;
   stop: () => void;
   isLoading: boolean;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  error: any;
-  setInput: React.Dispatch<React.SetStateAction<string>>;
+  error: Error | undefined;
   clearChat: () => void;
   exportToPDF: () => void;
   isInitialized: boolean;
+  setMessages: (messages: UIMessage[] | ((messages: UIMessage[]) => UIMessage[])) => void;
 }
 
 const ChatContext = createContext<ChatContextType | undefined>(undefined);
@@ -30,59 +27,42 @@ export function ChatProvider({ children }: { children: ReactNode }) {
   const [isInitialized, setIsInitialized] = useState(false);
   const [input, setInput] = useState("");
 
-  const chatConfig = useChat({
-    transport: new DefaultChatTransport({
-      api: "/api/chat",
-      body: {
-        userRole: user?.role || "analyst",
-      }
-    }),
-  });
+  const {
+    messages,
+    setMessages,
+    sendMessage: aiSendMessage,
+    status,
+    error,
+    stop,
+    regenerate,
+  } = useChat();
 
-  const { messages, setMessages, sendMessage, stop, status, error } = chatConfig;
+  // Derive isLoading from the SDK 4.x status field
   const isLoading = status === "submitted" || status === "streaming";
+
+  const sendMessage = (text: string) => {
+    if (!text.trim()) return;
+    
+    // AI SDK 4.x sendMessage expects { text: string } object
+    aiSendMessage({ text });
+  };
 
   useEffect(() => {
     // Load from local storage on mount
     const saved = localStorage.getItem("crime_analytics_chat_history");
     if (saved) {
       try {
-        setMessages(JSON.parse(saved));
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setMessages(parsed);
+        }
       } catch (e) {
         console.error("Failed to parse chat history", e);
       }
-    } else {
-      setMessages([
-        {
-          id: "welcome-1",
-          role: "assistant",
-          parts: [{ type: "text", text: "Hello! I am the **AI Crime Intelligence Assistant**. I can help you analyze crime trends, identify hotspots, generate reports, and navigate the platform. \n\nHow can I assist you today?" }]
-        }
-      ]);
     }
     setIsInitialized(true);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!input.trim() || isLoading) return;
-    sendMessage({ role: "user", parts: [{ type: "text", text: input.trim() }] });
-    setInput("");
-  };
-
-  // Re-map reload to regenerate for this SDK version, or just pass empty if unsupported
-  const reload = () => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    if ((chatConfig as any).reload) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (chatConfig as any).reload();
-    }
-  };
 
   useEffect(() => {
     if (isInitialized && messages.length > 0) {
@@ -91,13 +71,8 @@ export function ChatProvider({ children }: { children: ReactNode }) {
   }, [messages, isInitialized]);
 
   const clearChat = () => {
-    const welcomeMessage: UIMessage = {
-      id: `welcome-${Date.now()}`,
-      role: "assistant",
-      parts: [{ type: "text", text: "Hello! I am the **AI Crime Intelligence Assistant**. I can help you analyze crime trends, identify hotspots, generate reports, and navigate the platform. \n\nHow can I assist you today?" }]
-    };
-    setMessages([welcomeMessage]);
-    localStorage.setItem("crime_analytics_chat_history", JSON.stringify([welcomeMessage]));
+    setMessages([]);
+    localStorage.removeItem("crime_analytics_chat_history");
   };
 
   const exportToPDF = async () => {
@@ -122,12 +97,11 @@ export function ChatProvider({ children }: { children: ReactNode }) {
     <ChatContext.Provider
       value={{
         messages,
+        setMessages,
         input,
         setInput,
-        handleInputChange,
-        handleSubmit,
         sendMessage,
-        reload,
+        reload: regenerate,
         stop,
         isLoading,
         error,

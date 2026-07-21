@@ -7,7 +7,7 @@ from backend.app.services.postgis_repository import PostGISCrimeRepository
 from backend.app.services.repository_factory import get_crime_repository
 from ml.prediction.engine import PredictionEngine
 from ml.preprocessing.eda import summarize_crime_data
-
+from ml.models.network import build_criminal_network
 
 class AnalyticsService:
     def __init__(self, repository: CrimeDataRepository | PostGISCrimeRepository | None = None) -> None:
@@ -16,7 +16,7 @@ class AnalyticsService:
 
     def crimes(self, **filters: object) -> list[dict]:
         skip = filters.pop("skip", 0)
-        limit = filters.pop("limit", 5000)
+        limit = filters.pop("limit", 50000)
         frame = self.repository.filtered(**filters)
         sorted_frame = frame.sort_values("reported_at", ascending=False)
         return self._json_records(sorted_frame.iloc[skip:skip + limit])
@@ -29,7 +29,7 @@ class AnalyticsService:
         for column in searchable_columns:
             mask = mask | frame[column].astype(str).str.lower().str.contains(normalized, regex=False)
         results = frame[mask].sort_values("reported_at", ascending=False)
-        return {"query": query, "total": int(len(results)), "results": self._json_records(results.head(25))}
+        return {"query": query, "total": int(len(results)), "results": self._json_records(results.head(1000))}
 
     def socio_economic_correlation(self) -> dict:
         frame = self.repository.prepared()
@@ -62,7 +62,7 @@ class AnalyticsService:
         return {
             "factors": factors,
             "correlation": round(float(correlation), 3),
-            "insight": "Higher-density urban districts show stronger crime concentration in the current demo dataset.",
+            "insight": "Higher-density urban districts show stronger crime concentration.",
         }
 
     def dashboard(self) -> dict:
@@ -111,8 +111,8 @@ class AnalyticsService:
             "explainability": output.explanations,
         }
 
-    def network(self) -> dict:
-        return self.engine.run(self.repository.raw()).network
+    def network(self, focus_node: str | None = None, max_nodes: int = 500) -> dict:
+        return build_criminal_network(self.repository.raw(), focus_node=focus_node, max_nodes=max_nodes)
 
     def repeat_offenders(self) -> list[dict]:
         return self.engine.run(self.repository.raw()).repeat_offenders

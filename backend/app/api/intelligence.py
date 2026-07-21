@@ -20,8 +20,8 @@ def predictions() -> dict:
 
 
 @router.get("/network")
-def network() -> dict:
-    return service.network()
+def network(focus_node: str | None = None, max_nodes: int = 500) -> dict:
+    return service.network(focus_node=focus_node, max_nodes=max_nodes)
 
 
 @router.get("/repeat-offenders")

@@ -12,7 +12,7 @@ export function DataTable({
 }) {
   const [page, setPage] = useState(0);
   const [search, setSearch] = useState("");
-  const rowsPerPage = 50;
+  const rowsPerPage = 100;
 
   const filteredRows = useMemo(() => {
     if (!search) return rows;

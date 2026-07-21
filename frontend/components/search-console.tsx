@@ -17,7 +17,7 @@ export function SearchConsole() {
     setLoading(true);
     try {
       const isBrowser = typeof window !== "undefined";
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || (isBrowser ? "" : "http://127.0.0.1:8000");
+      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
       const response = await fetch(`${baseUrl}/api/search?q=${encodeURIComponent(query)}`);
       const body = await response.json();
       setRows(body.results ?? []);

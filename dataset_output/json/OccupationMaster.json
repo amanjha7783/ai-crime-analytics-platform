@@ -1,0 +1,22 @@
+[
+  {
+    "OccupationID":1,
+    "OccupationName":"Student"
+  },
+  {
+    "OccupationID":2,
+    "OccupationName":"Private Employee"
+  },
+  {
+    "OccupationID":3,
+    "OccupationName":"Government Employee"
+  },
+  {
+    "OccupationID":4,
+    "OccupationName":"Business"
+  },
+  {
+    "OccupationID":5,
+    "OccupationName":"Unemployed"
+  }
+]

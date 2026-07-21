@@ -19,9 +19,7 @@ def list_crimes(
     status: str | None = Query(default=None),
     year: int | None = Query(default=None),
 ) -> list[dict]:
-    # Cap the limit internally to protect memory while allowing large pagination
-    safe_limit = min(limit, 5000)
-
+    # Pass the limit directly without arbitrary caps, as requested for full dataset support
     return service.crimes(
         district=district,
         crime_type=crime_type,
@@ -29,5 +27,5 @@ def list_crimes(
         status=status,
         year=year,
         skip=skip,
-        limit=safe_limit,
+        limit=limit,
     )

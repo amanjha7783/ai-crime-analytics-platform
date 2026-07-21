@@ -1,63 +1,68 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { streamText } from "ai";
-import { getCrimeTrends, getHotspots, navigateDashboard } from "@/lib/ai-tools";
+import { streamText, convertToModelMessages, UIMessage } from "ai";
+import { z } from "zod";
+import { 
+  getCrimeTrends, 
+  getHotspots, 
+  getAnalytics,
+  getPredictions,
+  getRepeatOffenders,
+  navigateDashboard 
+} from "@/lib/ai-tools";
 
 export const maxDuration = 60;
-
-const google = createGoogleGenerativeAI({
-  apiKey: process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY || "",
-});
 
 export async function POST(req: Request) {
   try {
     const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_GENERATIVE_AI_API_KEY;
     if (!apiKey || apiKey === "your_gemini_api_key_here") {
-      throw new Error("Google Gemini API Key is missing or invalid. Please update your .env.local file with a valid API key.");
+      return new Response(
+        JSON.stringify({ error: "API Key missing. Please configure GEMINI_API_KEY in .env.local" }),
+        { status: 500, headers: { "Content-Type": "application/json" } }
+      );
     }
 
-    const { messages, userRole } = await req.json();
-    
-    // Map messages to ensure compatibility with Vercel AI SDK CoreMessage format
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const coreMessages = messages.map((msg: any) => {
-      if (msg.parts && Array.isArray(msg.parts)) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const textParts = msg.parts.filter((p: any) => p.type === "text").map((p: any) => p.text).join("\n");
-        return { role: msg.role, content: textParts };
-      }
-      return { role: msg.role, content: msg.content || "" };
+    const google = createGoogleGenerativeAI({
+      apiKey: apiKey,
     });
 
-    const systemPrompt = `You are a highly intelligent Crime Intelligence Assistant for the Karnataka State Police AI-Driven Crime Analytics Platform.
-Your role is to help ${userRole || "officers and analysts"} understand crime data, predict hotspots, analyze trends, and generate insights.
-Be professional, analytical, and concise. 
-Format responses clearly using Markdown.
-If the user asks to see a chart, map, or open a page, use the navigateDashboard tool to take them to the relevant dashboard.
-If they ask for specific data, use the available tools to fetch it before answering.`;
+    const body = await req.json();
+    const messages: UIMessage[] = body.messages ?? [];
+
+    const systemPrompt = `You are an elite, highly intelligent Police Intelligence Assistant for the Karnataka State Police AI-Driven Crime Analytics Platform.
+Your role is to help officers and analysts understand crime data, predict hotspots, analyze trends, and generate insights.
+CRITICAL RULES:
+1. ALWAYS use the provided tools to fetch real data from the platform database before answering questions about crimes, hotspots, analytics, or repeat offenders. Do NOT make up data.
+2. If the user asks a specific question (e.g., "Which district has the highest cyber crime rate?"), use 'getAnalytics' or 'getCrimeTrends' to find the answer.
+3. Be professional, analytical, and concise. Format responses clearly using Markdown tables, bullet points, and bold text for emphasis.
+4. If a user asks to see a chart, map, or open a specific page, use the 'navigateDashboard' tool to take them there.
+5. Provide actionable recommendations based on the data.
+6. When using tools, summarize the data you receive in a digestible way for the user. Don't just dump raw JSON.`;
 
     const tools = {
       getCrimeTrends,
       getHotspots,
+      getAnalytics,
+      getPredictions,
+      getRepeatOffenders,
       navigateDashboard,
     };
 
+    // Convert UIMessage[] (parts-based) to model messages for streamText
+    const modelMessages = convertToModelMessages(messages);
+
     const result = await streamText({
       model: google("gemini-2.5-pro"),
-      messages: coreMessages,
+      messages: modelMessages,
       system: systemPrompt,
       tools,
+      maxSteps: 3,
     });
 
-    // @ts-expect-error: Handle type mismatch across AI SDK versions
-    return result.toDataStreamResponse ? result.toDataStreamResponse({
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      getErrorMessage: (err: any) => {
-        return err instanceof Error ? err.message : String(err);
-      }
-    }) : result.toTextStreamResponse();
+    return result.toUIMessageStreamResponse();
   } catch (error) {
     console.error("AI Chat Error:", error);
-    const errorMessage = error instanceof Error ? error.message : "An error occurred during the AI chat session.";
+    const errorMessage = error instanceof Error ? error.message : "AI service temporarily unavailable.";
     return new Response(
       JSON.stringify({ error: errorMessage }),
       { status: 500, headers: { "Content-Type": "application/json" } }

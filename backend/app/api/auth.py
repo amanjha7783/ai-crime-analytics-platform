@@ -22,11 +22,24 @@ def login(payload: LoginRequest) -> dict:
     """Authenticate a user and return a JWT access token."""
     try:
         response = auth_service.login(payload.username, payload.password)
+    except ValueError as exc:
+        error_msg = str(exc)
+        if "User not found" in error_msg:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=error_msg,
+            )
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail=error_msg,
+            )
     except RuntimeError as exc:
         raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(exc),
         )
+
     if response is None:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
