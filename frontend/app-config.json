@@ -3,5 +3,6 @@
   "env_variables": {
     "NODE_ENV": "production"
   },
+  "build_command": "npm install && npm run build",
   "command": "npm run start"
 }
