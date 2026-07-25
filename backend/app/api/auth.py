@@ -48,7 +48,9 @@ def login(payload: LoginRequest) -> dict:
     return response
 
 
-@router.post("/signup", response_model=SignupResponse, status_code=status.HTTP_201_CREATED)
+@router.post(
+    "/signup", response_model=SignupResponse, status_code=status.HTTP_201_CREATED
+)
 def signup(payload: SignupRequest) -> dict:
     """Register a new user account."""
     try:

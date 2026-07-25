@@ -9,8 +9,11 @@ from ml.prediction.engine import PredictionEngine
 from ml.preprocessing.eda import summarize_crime_data
 from ml.models.network import build_criminal_network
 
+
 class AnalyticsService:
-    def __init__(self, repository: CrimeDataRepository | PostGISCrimeRepository | None = None) -> None:
+    def __init__(
+        self, repository: CrimeDataRepository | PostGISCrimeRepository | None = None
+    ) -> None:
         self.repository = repository or get_crime_repository()
         self.engine = PredictionEngine()
 
@@ -19,17 +22,30 @@ class AnalyticsService:
         limit = filters.pop("limit", 50000)
         frame = self.repository.filtered(**filters)
         sorted_frame = frame.sort_values("reported_at", ascending=False)
-        return self._json_records(sorted_frame.iloc[skip:skip + limit])
+        return self._json_records(sorted_frame.iloc[skip : skip + limit])
 
     def search(self, query: str) -> dict:
         frame = self.repository.prepared()
         normalized = query.strip().lower()
-        searchable_columns = ["fir_id", "offender_id", "district", "crime_type", "police_station", "status"]
+        searchable_columns = [
+            "fir_id",
+            "offender_id",
+            "district",
+            "crime_type",
+            "police_station",
+            "status",
+        ]
         mask = False
         for column in searchable_columns:
-            mask = mask | frame[column].astype(str).str.lower().str.contains(normalized, regex=False)
+            mask = mask | frame[column].astype(str).str.lower().str.contains(
+                normalized, regex=False
+            )
         results = frame[mask].sort_values("reported_at", ascending=False)
-        return {"query": query, "total": int(len(results)), "results": self._json_records(results.head(1000))}
+        return {
+            "query": query,
+            "total": int(len(results)),
+            "results": self._json_records(results.head(1000)),
+        }
 
     def socio_economic_correlation(self) -> dict:
         frame = self.repository.prepared()
@@ -38,9 +54,15 @@ class AnalyticsService:
             .agg(
                 crime_count=("fir_id", "count"),
                 population_density=("population_density", "mean"),
-                income_category=("income_category", lambda values: values.mode().iloc[0]),
+                income_category=(
+                    "income_category",
+                    lambda values: values.mode().iloc[0],
+                ),
                 risk_score=("risk_score", "mean"),
-                high_risk_cases=("risk_level", lambda values: int((values == "High").sum())),
+                high_risk_cases=(
+                    "risk_level",
+                    lambda values: int((values == "High").sum()),
+                ),
             )
             .reset_index()
             .sort_values("risk_score", ascending=False)
@@ -72,7 +94,9 @@ class AnalyticsService:
         active = int(frame["status"].isin(["Open", "Under Investigation"]).sum())
         solved = int((frame["status"] == "Solved").sum())
         repeat_count = len(predictions.repeat_offenders)
-        high_risk_zones = sum(1 for item in predictions.hotspots if item["risk_level"] == "High")
+        high_risk_zones = sum(
+            1 for item in predictions.hotspots if item["risk_level"] == "High"
+        )
         district_counts = frame["district"].value_counts().reset_index()
         district_counts.columns = ["district", "crime_count"]
         trend = (
@@ -82,7 +106,12 @@ class AnalyticsService:
             .reset_index(name="crime_count")
             .to_dict("records")
         )
-        crime_mix = frame["crime_type"].value_counts().rename_axis("crime_type").reset_index(name="count")
+        crime_mix = (
+            frame["crime_type"]
+            .value_counts()
+            .rename_axis("crime_type")
+            .reset_index(name="count")
+        )
         return {
             "kpis": {
                 "total_crimes": total,
@@ -112,7 +141,9 @@ class AnalyticsService:
         }
 
     def network(self, focus_node: str | None = None, max_nodes: int = 500) -> dict:
-        return build_criminal_network(self.repository.raw(), focus_node=focus_node, max_nodes=max_nodes)
+        return build_criminal_network(
+            self.repository.raw(), focus_node=focus_node, max_nodes=max_nodes
+        )
 
     def repeat_offenders(self) -> list[dict]:
         return self.engine.run(self.repository.raw()).repeat_offenders

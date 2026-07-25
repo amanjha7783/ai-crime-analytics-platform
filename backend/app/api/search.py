@@ -10,5 +10,9 @@ service = AnalyticsService()
 
 
 @router.get("/search")
-def search(q: str = Query(min_length=2, description="FIR, criminal, location, district, or crime type")) -> dict:
+def search(
+    q: str = Query(
+        min_length=2, description="FIR, criminal, location, district, or crime type"
+    )
+) -> dict:
     return service.search(q)

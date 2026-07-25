@@ -34,8 +34,18 @@ class AuthService:
         # Build the four demo accounts
         _demo_accounts = [
             ("admin@ksp.local", "KSP Command Admin", "Admin", "admin123"),
-            ("officer@ksp.local", "Station Police Officer", "Police Officer", "officer123"),
-            ("investigator@ksp.local", "Crime Investigator", "Investigator", "investigator123"),
+            (
+                "officer@ksp.local",
+                "Station Police Officer",
+                "Police Officer",
+                "officer123",
+            ),
+            (
+                "investigator@ksp.local",
+                "Crime Investigator",
+                "Investigator",
+                "investigator123",
+            ),
             ("analyst@ksp.local", "Crime Data Analyst", "Analyst", "analyst123"),
         ]
         for uname, fname, role, pwd in _demo_accounts:
@@ -65,12 +75,14 @@ class AuthService:
         )
         try:
             with self._engine.connect() as connection:
-                row = connection.execute(query, {"username": username}).mappings().first()
+                row = (
+                    connection.execute(query, {"username": username}).mappings().first()
+                )
         except OperationalError:
             raise RuntimeError("Database connection failed")
         except Exception as e:
             raise RuntimeError(f"Database error: {str(e)}")
-            
+
         if row is None:
             return None
         return {
@@ -113,7 +125,9 @@ class AuthService:
     def _update_password_hash(self, username: str, new_hash: str) -> None:
         if not self.settings.use_database or self._engine is None:
             return
-        query = text("UPDATE users SET password_hash = :hash WHERE lower(username) = lower(:username)")
+        query = text(
+            "UPDATE users SET password_hash = :hash WHERE lower(username) = lower(:username)"
+        )
         try:
             with self._engine.begin() as conn:
                 conn.execute(query, {"hash": new_hash, "username": username})
@@ -125,13 +139,13 @@ class AuthService:
             user = self._get_user(username)
         except RuntimeError as e:
             raise e
-            
+
         if user is None:
             raise ValueError("User not found")
 
         info = self._extract(user)
         pwd_hash = info.get("password_hash")
-        
+
         # Plain text password migration
         if pwd_hash and not pwd_hash.startswith("$2"):
             try:
@@ -146,12 +160,14 @@ class AuthService:
             is_valid = verify_password(password, pwd_hash)
         except Exception as e:
             raise RuntimeError(f"Password verification failed: {str(e)}")
-            
+
         if not is_valid:
             raise ValueError("Invalid credentials")
 
         try:
-            access_token = create_access_token(info["username"], info["role"], info["full_name"])
+            access_token = create_access_token(
+                info["username"], info["role"], info["full_name"]
+            )
         except Exception as e:
             raise RuntimeError(f"JWT generation failed: {str(e)}")
 
@@ -165,7 +181,9 @@ class AuthService:
             },
         }
 
-    def signup(self, username: str, password: str, full_name: str, role: str = "Analyst") -> dict:
+    def signup(
+        self, username: str, password: str, full_name: str, role: str = "Analyst"
+    ) -> dict:
         """Register a new user.  Returns a dict with user info or raises ValueError."""
         key = username.strip().lower()
 
@@ -209,7 +227,7 @@ class AuthService:
                         {"name": user.role},
                     ).first()
                 role_id = role_row[0]  # type: ignore[index]
-    
+
                 conn.execute(
                     text(
                         """

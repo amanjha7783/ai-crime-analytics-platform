@@ -22,7 +22,15 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    for router in [health.router, auth.router, dashboard.router, crimes.router, intelligence.router, search.router, analytics.router]:
+    for router in [
+        health.router,
+        auth.router,
+        dashboard.router,
+        crimes.router,
+        intelligence.router,
+        search.router,
+        analytics.router,
+    ]:
         app.include_router(router, prefix=settings.api_prefix)
     return app
 

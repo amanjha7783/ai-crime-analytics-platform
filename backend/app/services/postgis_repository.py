@@ -53,5 +53,7 @@ class PostGISCrimeRepository:
             if column == "year":
                 frame = frame[frame["crime_year"] == int(value)]
             else:
-                frame = frame[frame[column].astype(str).str.lower() == str(value).lower()]
+                frame = frame[
+                    frame[column].astype(str).str.lower() == str(value).lower()
+                ]
         return frame.reset_index(drop=True)
