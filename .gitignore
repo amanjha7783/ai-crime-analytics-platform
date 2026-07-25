@@ -91,3 +91,8 @@ Thumbs.db
 # ==========================
 .worktrees/
 worktrees/
+
+# ==========================
+# Data Outputs
+# ==========================
+synthetic-data-gen/dataset_output/

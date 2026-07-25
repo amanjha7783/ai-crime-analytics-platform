@@ -1,22 +1,9 @@
 {
   "project": "ai-crime-analytics-platform",
-  "services": [
-    {
-      "name": "frontend",
-      "type": "web",
-      "framework": "Next.js",
-      "rootDir": "frontend",
-      "installCommand": "npm install",
-      "buildCommand": "npm run build",
-      "outputDir": ".next"
-    },
-    {
-      "name": "backend",
-      "type": "api",
-      "runtime": "python",
-      "rootDir": "backend",
-      "installCommand": "pip install -r ../requirements.txt",
-      "startCommand": "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
-    }
-  ]
+  "appsails": {
+    "source": [
+      "frontend",
+      "backend"
+    ]
+  }
 }
