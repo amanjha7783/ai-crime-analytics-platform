@@ -3,7 +3,7 @@ from __future__ import annotations
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-from backend.app.core.config import get_settings
+from app.core.config import get_settings
 from ml.prediction.engine import PredictionEngine
 
 

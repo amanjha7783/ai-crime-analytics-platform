@@ -7,8 +7,8 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.engine import Engine
 
-from backend.app.core.config import get_settings
-from backend.app.core.security import create_access_token, hash_password, verify_password
+from app.core.config import get_settings
+from app.core.security import create_access_token, hash_password, verify_password
 
 
 @dataclass(frozen=True)

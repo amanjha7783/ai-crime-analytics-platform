@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from fastapi import APIRouter
 
-from backend.app.services.analytics_service import AnalyticsService
+from app.services.analytics_service import AnalyticsService
 
 
 router = APIRouter(prefix="/analytics", tags=["analytics"])

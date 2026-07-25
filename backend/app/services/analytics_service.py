@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import pandas as pd
 
-from backend.app.services.data_repository import CrimeDataRepository
-from backend.app.services.postgis_repository import PostGISCrimeRepository
-from backend.app.services.repository_factory import get_crime_repository
+from app.services.data_repository import CrimeDataRepository
+from app.services.postgis_repository import PostGISCrimeRepository
+from app.services.repository_factory import get_crime_repository
 from ml.prediction.engine import PredictionEngine
 from ml.preprocessing.eda import summarize_crime_data
 from ml.models.network import build_criminal_network

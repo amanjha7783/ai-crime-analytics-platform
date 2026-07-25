@@ -6,7 +6,7 @@ import bcrypt
 from fastapi import Depends, Header, HTTPException, status
 from jose import JWTError, jwt
 
-from backend.app.core.config import get_settings
+from app.core.config import get_settings
 
 # ---------------------------------------------------------------------------
 # Password hashing – bcrypt (direct)

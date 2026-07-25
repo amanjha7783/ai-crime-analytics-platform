@@ -2,15 +2,15 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from backend.app.core.security import get_current_user
-from backend.app.domain.schemas import (
+from app.core.security import get_current_user
+from app.domain.schemas import (
     LoginRequest,
     SignupRequest,
     SignupResponse,
     TokenResponse,
     UserOut,
 )
-from backend.app.services.auth_service import AuthService
+from app.services.auth_service import AuthService
 
 
 router = APIRouter(tags=["auth"])
