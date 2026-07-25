@@ -1,7 +1,10 @@
 {
-  "stack": "python39",
-  "env_variables": {
-    "PYTHONPATH": "."
+  "stack": "cstack-v5",
+  "env": "python311",
+  "build": {
+    "command": "python -m pip install -r requirements.txt"
   },
-  "command": "uvicorn app.main:app --host 0.0.0.0 --port $X_ZOHO_CATALYST_LISTEN_PORT"
+  "run": {
+    "command": "python -m uvicorn app.main:app --host 0.0.0.0 --port $X_ZOHO_CATALYST_LISTEN_PORT"
+  }
 }

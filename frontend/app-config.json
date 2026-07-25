@@ -1,8 +1,10 @@
 {
-  "stack": "node20",
-  "env_variables": {
-    "NODE_ENV": "production"
+  "stack": "cstack-v5",
+  "env": "node18",
+  "build": {
+    "command": "npm install && npm run build"
   },
-  "build_command": "npm install && npm run build",
-  "command": "npm run start"
+  "run": {
+    "command": "npm run start -- -p $X_ZOHO_CATALYST_LISTEN_PORT"
+  }
 }
