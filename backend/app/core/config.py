@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass
 from functools import lru_cache
+from pathlib import Path
 
 
 @dataclass(frozen=True)
@@ -27,7 +28,8 @@ class Settings:
     )
     redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
     crime_data_path: str = os.getenv(
-        "CRIME_DATA_PATH", "data/processed/crimes_features.csv"
+        "CRIME_DATA_PATH",
+        str(Path(__file__).parent.parent.parent / "data" / "processed" / "crimes_features.csv")
     )
     use_database: bool = os.getenv("USE_DATABASE", "false").lower() in {
         "1",

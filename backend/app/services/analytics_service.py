@@ -37,8 +37,8 @@ class AnalyticsService:
         ]
         mask = False
         for column in searchable_columns:
-            mask = mask | frame[column].astype(str).str.lower().str.contains(
-                normalized, regex=False
+            mask = mask | frame[column].astype(str).str.contains(
+                normalized, case=False, regex=False
             )
         results = frame[mask].sort_values("reported_at", ascending=False)
         return {

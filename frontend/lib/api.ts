@@ -77,7 +77,34 @@ export type PredictionData = {
   };
 };
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+function getBaseUrl() {
+  if (typeof window !== "undefined") {
+    // Client-side rendering: Next.js proxies to backend via next.config.ts
+    return "";
+  }
+  
+  // Server-side rendering (SSR) requires absolute URLs
+  if (process.env.BACKEND_URL) {
+    // Internal Catalyst AppSail URL or local override
+    return process.env.BACKEND_URL;
+  }
+  
+  if (process.env.NEXT_PUBLIC_API_BASE_URL) {
+    return process.env.NEXT_PUBLIC_API_BASE_URL;
+  }
+  
+  // Local development fallback
+  if (process.env.NODE_ENV === "development") {
+    return "http://127.0.0.1:8000";
+  }
+  
+  // Failsafe configuration error
+  throw new Error(
+    "API_BASE_URL is missing. You must define NEXT_PUBLIC_API_BASE_URL or BACKEND_URL in your environment variables for Server-Side Rendering (SSR) to work."
+  );
+}
+
+const API_BASE_URL = getBaseUrl();
 
 function getAuthHeaders(): Record<string, string> {
   if (typeof window === "undefined") {
